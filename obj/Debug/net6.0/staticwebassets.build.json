@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sEDDDvPuPp5UWAEHm342TB+6namoGKEZqfnw0eurLx0=",
+  "Hash": "orS/yktFj7yPGFpKkQISR4KPepiNMJpVPPAtUneNJV8=",
   "Source": "HotelManagement",
   "BasePath": "_content/HotelManagement",
   "Mode": "Default",
@@ -833,6 +833,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\css\\Style.css",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "css/Style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Style.css"
+    },
+    {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\favicon.ico",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
@@ -1088,6 +1105,40 @@
       "OriginalItemSpec": "wwwroot\\img\\premium_photo-1663013123196-f83decee810f.jpeg"
     },
     {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\res.jpeg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/res.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\res.jpeg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant-bg.jpg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/restaurant-bg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\restaurant-bg.jpg"
+    },
+    {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\room 1.jpeg",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
@@ -1154,6 +1205,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\room 4.jpeg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\welcome.jpg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/welcome.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\welcome.jpg"
     },
     {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\js\\site.js",

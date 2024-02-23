@@ -8,7 +8,6 @@
         public string Address { get; set; }
         public DateTime ArrivalDate { get; set; }
         public DateTime DepartureDate { get; set; }
-        public int Amount { get; set; }
-        public ICollection<Room> Rooms { get; set; }
+        public string HotelPackage { get; set; }
     }
 }

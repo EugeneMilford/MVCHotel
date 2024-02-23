@@ -3,46 +3,197 @@
  }
 
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Cover Template · Bootstrap v5.0</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="~/css/Style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper"">
+            <!-- Header Area -->
+        <header class="header_area fixed-top" id="header">
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <nav class="h-100 navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                            <!-- Nav -->
+                            <div class="collapse navbar-collapse" id="dorneNav">
+                                <ul class="navbar-nav mr-auto" id="dorneMenu">
+                                    <li class="nav-item active">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Welcome Area  -->
+        <section class="vacation-welcome-area bg-img bg-overlay">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-10">
+                        <div class="hero-content">
+                            <h2>Discover places near you</h2>
+                            <h4>This is the best guide for your vacation journey</h4>
+                        </div>
+                        <!-- Hero Search Form -->
+                        <div class="hero-search-form">
+                            <!-- Tabs -->
+                            <div class="nav nav-tabs" id="heroTab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true">Places</a>
+                            <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab" href="#nav-events" role="tab" aria-controls="nav-events" aria-selected="false">Events</a>
+                        </div>
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-places-tab">
+                                <h6>What are you looking for?</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select">
+                                        <option selected>Your Destinations</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Latvia</option>
+                                        <option value="3">Dhaka</option>
+                                        <option value="4">Melbourne</option>
+                                        <option value="5">London</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>All Catagories</option>
+                                        <option value="1">Catagories 1</option>
+                                        <option value="2">Catagories 2</option>
+                                        <option value="3">Catagories 3</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>Price Range</option>
+                                        <option value="1">$100 - $499</option>
+                                        <option value="2">$500 - $999</option>
+                                        <option value="3">$1000 - $4999</option>
+                                    </select>
+                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
+                                <h6>What are you looking for?</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select">
+                                        <option selected>Your Destinations</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Latvia</option>
+                                        <option value="3">Dhaka</option>
+                                        <option value="4">Melbourne</option>
+                                        <option value="5">London</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>All Catagories</option>
+                                        <option value="1">Catagories 1</option>
+                                        <option value="2">Catagories 2</option>
+                                        <option value="3">Catagories 3</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>Price Range</option>
+                                        <option value="1">$100 - $499</option>
+                                        <option value="2">$500 - $999</option>
+                                        <option value="3">$1000 - $4999</option>
+                                    </select>
+                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
 
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
-    <link href="~/css/cover.css" rel="stylesheet"/>
-  </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-                <h3 class="float-md-start mb-0">Cover</h3>
-                <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Contact</a>
-                </nav>
-    </div>
-  </header>
-
-  <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-    </p>
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">www</a>.</p>
-  </footer>
-</div>
-  </body>
+    <!-- ***** Catagory Area Start ***** -->
+    <section class="vacation-category">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="all-categories">
+                        <div class="row">
+                            <!-- Single Category -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-category wow fadeInUpBig" data-wow-delay="0.2s">
+                                    <div class="category-content">
+                                        <img src="img/core-img/icon-1.png" alt="">
+                                        <a href="#">
+                                            <h6>Hotels</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Category -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-category wow fadeInUpBig" data-wow-delay="0.4s">
+                                    <div class="category-content">
+                                        <img src="img/core-img/icon-2.png" alt="">
+                                        <a href="#">
+                                            <h6>Restaurants</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Category -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-category wow fadeInUpBig" data-wow-delay="0.6s">
+                                    <div class="category-content">
+                                        <img src="img/core-img/icon-3.png" alt="">
+                                        <a href="#">
+                                            <h6>Outdoor Activities</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Category -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-category wow fadeInUpBig" data-wow-delay="0.8s">
+                                    <div class="category-content">
+                                        <img src="img/core-img/icon-4.png" alt="">
+                                        <a href="#">
+                                            <h6>Beauty &amp; Spa</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Category -->
+                            <div class="col-12 col-md">
+                                <div class="single-category wow fadeInUpBig" data-wow-delay="1s">
+                                    <div class="category-content">
+                                        <img src="img/core-img/icon-5.png" alt="">
+                                        <a href="#">
+                                            <h6>Cinema</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+        
+    
+    </body>
 </html>
-

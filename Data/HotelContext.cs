@@ -22,6 +22,15 @@ namespace HotelManagement.Data
 
         public DbSet<HotelManagement.Models.Invoice> Invoice { get; set; }
 
-        public DbSet<HotelManagement.Models.Guest> Guest { get; set; }
+        public DbSet<HotelManagement.Models.Activities> Activities { get; set; } 
+
+        public DbSet<HotelManagement.Models.Cinema> Cinema { get; set; }
+      
+        public DbSet<HotelManagement.Models.Fitness> Fitness { get; set; }
+
+        public DbSet<HotelManagement.Models.Restaurant> Restaurant { get; set; }
+
+        public DbSet<HotelManagement.Models.PlayArea> Kids { get; set; }
+        public DbSet<HotelManagement.Models.Spa> Spabooking { get; set; }
     }
 }

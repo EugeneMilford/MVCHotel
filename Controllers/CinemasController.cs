@@ -10,90 +10,85 @@ using HotelManagement.Models;
 
 namespace HotelManagement.Controllers
 {
-    public class InvoicesController : Controller
+    public class CinemasController : Controller
     {
         private readonly HotelContext _context;
 
-        public InvoicesController(HotelContext context)
+        public CinemasController(HotelContext context)
         {
             _context = context;
         }
 
-        // GET: Invoices
+        // GET: Cinema
         public async Task<IActionResult> Index()
         {
-            var hotelContext = _context.Invoice.Include(i => i.Reservation);
-            return View(await hotelContext.ToListAsync());
+            return View(await _context.Cinema.ToListAsync());
         }
 
-        // GET: Invoices/Details/5
+        // GET: Cinema/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Invoice == null)
+            if (id == null || _context.Cinema == null)
             {
                 return NotFound();
             }
 
-            var invoice = await _context.Invoice
-                .Include(i => i.Reservation)
-                .FirstOrDefaultAsync(m => m.InvoiceId == id);
-            if (invoice == null)
+            var cinema = await _context.Cinema
+                .FirstOrDefaultAsync(m => m.CinemaID == id);
+            if (cinema == null)
             {
                 return NotFound();
             }
 
-            return View(invoice);
+            return View(cinema);
         }
 
-        // GET: Invoices/Create
+        // GET: Cinema/Create
         public IActionResult Create()
         {
-            ViewData["ReservationId"] = new SelectList(_context.Set<Reservation>(), "ReservationId", "ReservationId");
             return View();
         }
 
-        // POST: Invoices/Create
+        // POST: Cinema/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("InvoiceId,ReservationId,Amount,IssueDate")] Invoice invoice)
+        public async Task<IActionResult> Create([Bind("CinemaID,GuestName,BookingTime,MovieTitle,NumberOfTickets,Confirmed")] Cinema cinema)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(invoice);
+                _context.Add(cinema);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ReservationId"] = new SelectList(_context.Set<Reservation>(), "ReservationId", "ReservationId", invoice.ReservationId);
-            return View(invoice);
+            return View(cinema);
         }
 
-        // GET: Invoices/Edit/5
+        // GET: Cinema/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Invoice == null)
+            if (id == null || _context.Cinema == null)
             {
                 return NotFound();
             }
 
-            var invoice = await _context.Invoice.FindAsync(id);
-            if (invoice == null)
+            var cinema = await _context.Cinema.FindAsync(id);
+            if (cinema == null)
             {
                 return NotFound();
             }
-            ViewData["ReservationId"] = new SelectList(_context.Set<Reservation>(), "ReservationId", "ReservationId", invoice.ReservationId);
-            return View(invoice);
+            return View(cinema);
         }
 
-        // POST: Invoices/Edit/5
+        // POST: Employees/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("InvoiceId,ReservationId,Amount,IssueDate")] Invoice invoice)
+        public async Task<IActionResult> Edit(int id, [Bind("CinemaID,GuestName,BookingTime,MovieTitle,NumberOfTickets,Confirmed")] Cinema cinema)
         {
-            if (id != invoice.InvoiceId)
+            if (id != cinema.CinemaID)
             {
                 return NotFound();
             }
@@ -102,12 +97,12 @@ namespace HotelManagement.Controllers
             {
                 try
                 {
-                    _context.Update(invoice);
+                    _context.Update(cinema);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InvoiceExists(invoice.InvoiceId))
+                    if (!CinemaExists(cinema.CinemaID))
                     {
                         return NotFound();
                     }
@@ -118,51 +113,50 @@ namespace HotelManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ReservationId"] = new SelectList(_context.Set<Reservation>(), "ReservationId", "ReservationId", invoice.ReservationId);
-            return View(invoice);
+            return View(cinema);
         }
 
-        // GET: Invoices/Delete/5
+        // GET: Cinema/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Invoice == null)
+            if (id == null || _context.Cinema == null)
             {
                 return NotFound();
             }
 
-            var invoice = await _context.Invoice
-                .Include(i => i.Reservation)
-                .FirstOrDefaultAsync(m => m.InvoiceId == id);
-            if (invoice == null)
+            var cinema = await _context.Cinema
+                .FirstOrDefaultAsync(m => m.CinemaID == id);
+            if (cinema == null)
             {
                 return NotFound();
             }
 
-            return View(invoice);
+            return View(cinema);
         }
 
-        // POST: Invoices/Delete/5
+        // POST: Cinema/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Invoice == null)
+            if (_context.Cinema == null)
             {
-                return Problem("Entity set 'HotelContext.Invoice'  is null.");
+                return Problem("Entity set 'HotelContext.Cinema'  is null.");
             }
-            var invoice = await _context.Invoice.FindAsync(id);
-            if (invoice != null)
+
+            var cinema = await _context.Cinema.FindAsync(id);
+            if (cinema != null)
             {
-                _context.Invoice.Remove(invoice);
+                _context.Cinema.Remove(cinema);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool InvoiceExists(int id)
+        private bool CinemaExists(int id)
         {
-          return _context.Invoice.Any(e => e.InvoiceId == id);
+            return _context.Cinema.Any(e => e.CinemaID == id);
         }
     }
 }
