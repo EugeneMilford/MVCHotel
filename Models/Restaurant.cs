@@ -4,7 +4,6 @@ namespace HotelManagement.Models
 {
     public class Restaurant
     {
-        [Key]
         public int RestaurantID { get; set; }
         public string CustomerName { get; set; }
         public DateTime BookingTime { get; set; }
