@@ -10,85 +10,85 @@ using HotelManagement.Models;
 
 namespace HotelManagement.Controllers
 {
-    public class CinemasController : Controller
+    public class RetreatController : Controller
     {
         private readonly HotelContext _context;
 
-        public CinemasController(HotelContext context)
+        public RetreatController(HotelContext context)
         {
             _context = context;
         }
 
-        // GET: Cinema
+        // GET: Retreat
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cinema.ToListAsync());
+            return View(await _context.Spabooking.ToListAsync());
         }
 
-        // GET: Cinema/Details/5
+        // GET: Retreat/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Cinema == null)
+            if (id == null || _context.Spabooking == null)
             {
                 return NotFound();
             }
 
-            var cinema = await _context.Cinema
-                .FirstOrDefaultAsync(m => m.CinemaID == id);
-            if (cinema == null)
+            var spa = await _context.Spabooking
+                .FirstOrDefaultAsync(m => m.SpaId == id);
+            if (spa == null)
             {
                 return NotFound();
             }
 
-            return View(cinema);
+            return View(spa);
         }
 
-        // GET: Cinema/Create
+        // GET: Retreat/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Cinema/Create
+        // POST: Retreat/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CinemaID,GuestName,BookingTime,MovieTitle,NumberOfTickets,Confirmed")] Cinema cinema)
+        public async Task<IActionResult> Create([Bind("SpaId,SpaCustomerName,BookingDate,StartTime,EndTime,SpaPackage,Service,IsConfirmed,Price")] Spa spa)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cinema);
+                _context.Add(spa);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(cinema);
+            return View(spa);
         }
 
-        // GET: Cinema/Edit/5
+        // GET: Retreat/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Cinema == null)
+            if (id == null || _context.Spabooking == null)
             {
                 return NotFound();
             }
 
-            var cinema = await _context.Cinema.FindAsync(id);
-            if (cinema == null)
+            var spa = await _context.Spabooking.FindAsync(id);
+            if (spa == null)
             {
                 return NotFound();
             }
-            return View(cinema);
+            return View(spa);
         }
 
-        // POST: Cinema/Edit/5
+        // POST: Retreat/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CinemaID,GuestName,BookingTime,MovieTitle,NumberOfTickets,Confirmed")] Cinema cinema)
+        public async Task<IActionResult> Edit(int id, [Bind("SpaId,SpaCustomerName,BookingDate,StartTime,EndTime,SpaPackage,Service,IsConfirmed,Price")] Spa spa)
         {
-            if (id != cinema.CinemaID)
+            if (id != spa.SpaId)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace HotelManagement.Controllers
             {
                 try
                 {
-                    _context.Update(cinema);
+                    _context.Update(spa);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CinemaExists(cinema.CinemaID))
+                    if (!SpaExists(spa.SpaId))
                     {
                         return NotFound();
                     }
@@ -113,50 +113,56 @@ namespace HotelManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(cinema);
+            return View(spa);
         }
 
-        // GET: Cinema/Delete/5
+        // GET: Retreat/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Cinema == null)
+            if (id == null || _context.Spabooking == null)
             {
                 return NotFound();
             }
 
-            var cinema = await _context.Cinema
-                .FirstOrDefaultAsync(m => m.CinemaID == id);
-            if (cinema == null)
+            var spa = await _context.Spabooking
+                .FirstOrDefaultAsync(m => m.SpaId == id);
+            if (spa == null)
             {
                 return NotFound();
             }
 
-            return View(cinema);
+            return View(spa);
         }
 
-        // POST: Cinema/Delete/5
+        // POST: Retreat/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Cinema == null)
+            if (_context.Spabooking == null)
             {
-                return Problem("Entity set 'HotelContext.Cinema'  is null.");
+                return Problem("Entity set 'HotelContext.SpaBooking  is null.");
             }
 
-            var cinema = await _context.Cinema.FindAsync(id);
-            if (cinema != null)
+            var spa = await _context.Spabooking.FindAsync(id);
+            if (spa != null)
             {
-                _context.Cinema.Remove(cinema);
+                _context.Spabooking.Remove(spa);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CinemaExists(int id)
+        private bool SpaExists(int id)
         {
-            return _context.Cinema.Any(e => e.CinemaID == id);
+            return _context.Spabooking.Any(e => e.SpaId == id);
         }
     }
 }
+
+
+
+
+
+
