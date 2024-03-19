@@ -27,8 +27,17 @@ namespace HotelManagement.Models
                     Age = 52,
                     Title = "Manager",
                     Address = "Cape Town"
+                },
+                new Employee
+                {
+                    Name = "Sally",
+                    Surname = "Abrams",
+                    Age = 27,
+                    Title = "Admin",
+                    Address = "Cape Town"
                 }
                 );
+                context.SaveChanges();
             }
         }
     }
