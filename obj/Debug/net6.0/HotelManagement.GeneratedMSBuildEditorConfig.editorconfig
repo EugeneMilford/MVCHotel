@@ -67,6 +67,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Outdoors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0ZG9vcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Outdoors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0ZG9vcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Outdoors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0ZG9vcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Outdoors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0ZG9vcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Outdoors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0ZG9vcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/ASP NET MVC/HotelManagement/Views/Restaurants/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
