@@ -288,6 +288,38 @@ li {
     height: 80px;
 }
 
+/* Opening Hours */
+
+.opening-hours-widget {
+    padding: 50px 30px;
+    background-color: #f3edff;
+    position: relative;
+    z-index: 1;
+}
+
+    .opening-hours-widget h6 {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+.opening-hours li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+    .opening-hours li:first-child p {
+        color: #7643ea;
+    }
+
+    .opening-hours li:last-child p {
+        margin-bottom: 0;
+    }
+
+
 /*----------------------
 Buttons
 ----------------------*/
