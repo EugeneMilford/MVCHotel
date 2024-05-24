@@ -853,9 +853,70 @@ Offers
 .offer_text {
     color: #fff;
 }
+
 /*----------------------
 Rooms
 ----------------------*/
+.our_room {
+    background-color: #f4f5f7;
+    padding: 60px 0 30px 0;
+    margin-top: 90px;
+}
+
+    .our_room .titlepage {
+        text-align: center;
+    }
+
+        .our_room .titlepage p {
+            color: #121212;
+            font-size: 17px;
+            margin-top: 20px;
+        }
+
+    .our_room .room {
+        text-align: center;
+        background-color: #fff;
+        margin-bottom: 30px;
+        transition: ease-in all 0.5s;
+    }
+
+        .our_room .room .room_img {
+            overflow: hidden;
+        }
+
+            .our_room .room .room_img figure {
+                margin: 0;
+            }
+
+                .our_room .room .room_img figure img {
+                    width: 100%;
+                    transition: all .5s;
+                }
+
+                    .our_room .room .room_img figure img:hover {
+                        transform: scale(1.2);
+                    }
+
+        .our_room .room .bed_room {
+            padding: 33px 30px;
+        }
+
+            .our_room .room .bed_room h3 {
+                color: #121212;
+                font-size: 25px;
+                line-height: 20px;
+                font-weight: 500;
+                transition: ease-in all 0.5s;
+                margin: auto;
+            }
+
+#serv_hover:hover.room {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgba(255, 9, 9, 0.15);
+    transition: ease-in all 0.5s;
+}
+/** end our_room section **/
+
 
 
 /*----------------------
@@ -976,67 +1037,6 @@ Pricing Table
     border: 2px solid black;
 }
 
-/*----------------------
-Contact
-----------------------*/
-.contact-form-area {
-    position: relative;
-    z-index: 1;
-    padding: 100px 40px 100px 50px;
-}
-
-.contact-text h4 {
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-bottom: 50px;
-}
-
-.contact-text p {
-    font-size: 14px;
-    line-height: 2;
-    margin: 0;
-}
-
-.single-contact-info {
-    margin: 70px 0;
-}
-
-    .single-contact-info:first-child {
-        margin-right: 65px;
-    }
-
-    .single-contact-info h6 {
-        font-size: 14px;
-    }
-
-        .single-contact-info h6 > i {
-            color: #c2b6d9;
-            margin-right: 30px;
-        }
-
-.contact-form {
-    padding: 70px 30px;
-    background-color: #f3edff;
-}
-
-.contact-form-title h6 {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.contact-form .form-control {
-    height: 50px;
-    font-size: 12px;
-    color: #72728c;
-    font-weight: 600;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 30px;
-}
-
-.contact-form textarea.form-control {
-    height: 110px;
-}
 
 /*----------------------
 Footer
