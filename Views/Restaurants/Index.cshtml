@@ -1,189 +1,156 @@
 ﻿@model IEnumerable<HotelManagement.Models.Restaurant>
 
-<section class="restaurant-welcome">
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="~/img/about.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-            </div>
-            <div class="col-lg-6">
-                <p class="lead mb-4">
-                    Step into a world where culinary artistry meets unparalleled hospitality. Indulge your senses with our carefully crafted menu, featuring a fusion of local flavors and international delicacies. Whether you're seeking a lavish dining experience or a casual meal with friends, our talented chefs are dedicated to delighting your palate.
-                </p>
+<!-- Hero Section -->
+<div class="restaurant-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Restaurants</h4>
+                <p>Welcome to our exquisite restaurant, where culinary excellence meets a warm, inviting atmosphere. Indulge in a diverse menu crafted 
+                    from the freshest local ingredients, offering a delightful fusion of traditional and contemporary flavors.</p>
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="dorne-single-listing-area section-padding-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Single Listing Content -->
-                <div class="col-12 col-lg-8">
-
-                    <div class="section-top-border">
-						<h3 class="mb-30 title_color">Booking Table</h3>
-						<div class="progress-table-wrap">
-							<div class="progress-table">
-								<div class="table-head">
-									<div class="serial">@Html.DisplayNameFor(model => model.CustomerName)</div>
-									<div class="country">@Html.DisplayNameFor(model => model.BookingTime)</div>
-									<div class="visit">@Html.DisplayNameFor(model => model.NumberOfGuests)</div>
-									<div class="percentage">@Html.DisplayNameFor(model => model.Confirmed)</div>
-								</div>
-                            @foreach (var item in Model)
-                            {
-                                <div class="table-row">
-									<div class="serial">@Html.DisplayFor(modelItem => item.CustomerName)</div>
-									<div class="country">@Html.DisplayFor(modelItem => item.BookingTime)</div>
-									<div class="visit">@Html.DisplayFor(modelItem => item.NumberOfGuests)</div>
-									<div class="visit">@Html.DisplayFor(modelItem => item.Confirmed)</div>
-                                    <div class="visit">
-                                        <a asp-action="Edit" asp-route-id="@item.RestaurantID">Edit</a> |
-                                        <a asp-action="Details" asp-route-id="@item.RestaurantID">Details</a> |
-                                        <a asp-action="Delete" asp-route-id="@item.RestaurantID">Delete</a>
-                                    </div>
-								</div>
-                            }
-							</div>
-						</div>
-					</div>
-
-                    <div class="single-listing-content">
-
-                        <div class="listing-title">
-                            <h4>Burger House soho</h4>
-                            <h6>First Avenue no 83</h6>
-                        </div>
-
-                        <div class="single-listing-nav">
-                            <nav>
-                                <ul id="listingNav">
-                                    <li class="active"><a href="#overview">Overview</a></li>
-                                    <li><a href="#menu">Menu</a></li>
-                                    <li><a href="#review">Reviews</a></li>
-                                    <li><a href="#lomap">Location on map</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                        <div class="overview-content mt-50" id="overview">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta lorem blandit aliquam eget quis ipsum. Vivamus accumsan consequat ligula non volutpat. Sed mollis orci non cursus vestibulum. Pellentesque vitae est a augue laoreet venenatis sed eu felis. Sed cursus magna nec turpis ullamcorper, eget rutrum felis egestas. Nunc odio ex, fermentum efficitur nunc vitae, efficitur hendrerit diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta lorem blandit aliquam eget quis ipsum.</p>
-                            <div class="row mt-5">
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Accepts Credit Cards</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bike Parking</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Wireless Internet</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Reservations</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Privat Parking</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Smoking Area</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Wheelchair Accesible</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Coupons</span>
-                                    </label>
-                                </div>
+<!-- Table -->
+<div class="container section_gap">
+    <div class="row">
+        <div class="col-8 section-top-border">
+            <div>
+                <h4>Table Heading</h4>
+            </div>
+            <div class="progress-table-wrap">
+                <div class="res-table">
+                    <div class="table-head">
+                        <div class="serial">#</div>
+                        <div class="country">Countries</div>
+                        <div class="visit">Visits</div>
+                        <div class="percentage">Percentages</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="serial">01</div>
+                        <div class="country"> <img src="image/elements/f1.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="res">
+                                <div class="res-bar color-1" role="resbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Listing Sidebar -->
-                <div class="col-12 col-md-8 col-lg-4">
-                    <div class="listing-sidebar">
-
-                        <!-- Opening Hours Widget -->
-                        <div class="opening-hours-widget mt-50">
-                            <h6>Opening Hours</h6>
-                            <ul class="opening-hours">
-                                <li>
-                                    <p>Monday</p>
-                                    <p>Closed</p>
-                                </li>
-                                <li>
-                                    <p>Tuesday</p>
-                                    <p>9 AM - 1 PM</p>
-                                </li>
-                                <li>
-                                    <p>Wednesday</p>
-                                    <p>9 AM - 1 PM</p>
-                                </li>
-                                <li>
-                                    <p>Thursday</p>
-                                    <p>9 AM - 1 PM</p>
-                                </li>
-                                <li>
-                                    <p>Friday</p>
-                                    <p>9 AM - 1 PM</p>
-                                </li>
-                                <li>
-                                    <p>Saturday</p>
-                                    <p>9 AM - 1 PM</p>
-                                </li>
-                                <li>
-                                    <p>Sunday</p>
-                                    <p>9 AM - 1 PM</p>
-                                </li>
-                            </ul>
+                    <div class="table-row">
+                        <div class="serial">02</div>
+                        <div class="country"> <img src="image/elements/f2.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="res">
+                                <div class="progress-bar color-2" role="resbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-
-                        <!-- Author Widget -->
-                        <div class="author-widget mt-50 d-flex align-items-center">
-                            <img src="img/clients-img/1.jpg" alt="">
-                            <div class="authors-name">
-                                <a href="#">James Smith</a>
-                                <p>The Author</p>
+                    </div>
+                    <div class="table-row">
+                        <div class="serial">03</div>
+                        <div class="country"> <img src="image/elements/f3.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="res">
+                                <div class="progress-bar color-3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="serial">04</div>
+                        <div class="country"> <img src="image/elements/f4.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="progress">
+                                <div class="progress-bar color-4" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="serial">05</div>
+                        <div class="country"> <img src="image/elements/f5.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="progress">
+                                <div class="progress-bar color-5" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="serial">06</div>
+                        <div class="country"> <img src="image/elements/f6.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="progress">
+                                <div class="progress-bar color-6" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="serial">07</div>
+                        <div class="country"> <img src="image/elements/f7.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="progress">
+                                <div class="progress-bar color-7" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="serial">08</div>
+                        <div class="country"> <img src="image/elements/f8.jpg" alt="flag">Canada</div>
+                        <div class="visit">645032</div>
+                        <div class="percentage">
+                            <div class="progress">
+                                <div class="progress-bar color-8" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ***** Single Listing Area End ***** -->
+        <div class="col-4">
+            <div class="opening-hours-widget mt-50">
+                <h6>Opening Hours</h6>
+                <ul class="opening-hours">
+                    <li>
+                        <p>Monday</p>
+                        <p>Closed</p>
+                    </li>
+                    <li>
+                        <p>Tuesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Wednesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Thursday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Friday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Saturday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Sunday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
 
 
     <section id="menu" class="menu section-bg">
@@ -302,7 +269,7 @@
       </div>
     </section>
 
-<section id="specials" class="specials">
+<section id="specials" class="specials section_gap">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
