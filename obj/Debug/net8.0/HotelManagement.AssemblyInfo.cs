@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotelManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+190b955a225068c0daef769e18deb302f24d2338")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da155b10ab0fbc99d09ff65f8a3bb3e0ad5b52bf")]
->>>>>>> MVCdotNetVersion_8
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+521ffccb60be99ba2faa36f689db313053ed9d7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("HotelManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotelManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

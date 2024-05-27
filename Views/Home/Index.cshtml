@@ -103,66 +103,66 @@
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="~/img/home/room1.jpg" alt="#" /></figure>
+                        <figure><img src="~/img/home/standard-room.jpg" alt="#" /></figure>
                     </div>
                     <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Standard Room</h3>
+                        <p>Step into your Standard Room, where simplicity and comfort combine to create a peaceful retreat</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="img/home/room2.jpg" alt="#" /></figure>
+                        <figure><img src="~/img/home/deluxe-room.jpg" alt="#" /></figure>
                     </div>
                     <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Deluxe Room</h3>
+                        <p>Welcome to your Deluxe Room, where added space and elegant touches ensure a delightful stay</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="img/home/room3.jpg" alt="#" /></figure>
+                        <figure><img src="~/img/home/suite.jpeg" alt="#" /></figure>
                     </div>
                     <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Suite</h3>
+                        <p>Experience the height of luxury in your Suite, where every detail is designed for your utmost comfort</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room4.jpg" alt="#" /></figure>
+                        <figure><img src="~/img/home/executive-room.jpeg" alt="#" /></figure>
                     </div>
                     <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Executive Room</h3>
+                        <p>Welcome to your Executive Room, a perfect haven for productivity and relaxation, tailored for the discerning traveler</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room5.jpg" alt="#" /></figure>
+                        <figure><img src="~/img/home/family-room.jpg" alt="#" /></figure>
                     </div>
                     <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Family Room</h3>
+                        <p>Make yourself at home in our Family Room, thoughtfully designed for quality time and shared moments with your loved ones</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room6.jpg" alt="#" /></figure>
+                        <figure><img src="~/img/home/penthouse-room.jpeg" alt="#" /></figure>
                     </div>
                     <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Penthouse</h3>
+                        <p>Indulge in the ultimate luxury of our Penthouse, offering stunning views and exquisite amenities for an unforgettable stay</p>
                     </div>
                 </div>
             </div>
@@ -200,8 +200,11 @@
                 </ul>
                 <p class="res_text">
                     We invite you to relax, unwind, and savor every moment at our restaurant. Whether you're here for a casual meal, a special occasion, or simply to enjoy good company and great food, 
-                    our attentive staff is here to ensure your experience is nothing short of exceptional. Welcome, and bon appétit!
-                </p>
+                    our attentive staff is here to ensure your experience is nothing short of exceptional. Welcome, and bon appétit!                   
+                    <a class="read-more" title="Book a Table" asp-area="" asp-controller="Restaurants" asp-action="Index">
+                        Book a Table
+                    </a>
+                </p>               
             </div>
         </div>
     </div>
@@ -217,57 +220,57 @@
         <div class="row g-0">
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="images/gallery2.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/birds.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="img/outdoors/birds.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/picnic.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="img/outdoors/canoeing.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/canoeing.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="img/outdoors/botanical.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/botanical.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="img/outdoors/fishing.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/fishing.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="images/gallery2.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/golf.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="img/outdoors/hiking.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/hiking.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                    <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                        <img src="img/outdoors/yoga.jpg" alt="" class="img-fluid">
+                    <a class="gallery-lightbox" data-gall="gallery-item" asp-area="" asp-controller="Outdoors" asp-action="Index">
+                        <img src="~/img/outdoors/yoga.jpg" alt="" class="img-fluid">
                     </a>
                 </div>
             </div>
