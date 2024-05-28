@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1M+REr2U9ocRAy0+wmUdgO2zdYgZJNfeho5YiKYzS+0=",
+  "Hash": "I+aYVfmjKFLW5X/DRlyWF7A9XtSxBpSsVpm4V36gU8A=",
   "Source": "HotelManagement",
   "BasePath": "_content/HotelManagement",
   "Mode": "Default",
@@ -1442,6 +1442,25 @@
       "OriginalItemSpec": "wwwroot\\img\\bg-img\\hero-3.jpg"
     },
     {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\cinema\\cinema_hero.jpeg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/cinema/cinema_hero.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cinema\\cinema_hero.jpeg"
+    },
+    {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\hero-1.jpg",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
@@ -1879,6 +1898,25 @@
       "OriginalItemSpec": "wwwroot\\img\\Outdoors\\hiking.jpg"
     },
     {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\outdoor_hero.jpeg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/Outdoors/outdoor_hero.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Outdoors\\outdoor_hero.jpeg"
+    },
+    {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\picnic.jpg",
       "SourceId": "HotelManagement",
       "SourceType": "Discovered",
@@ -2029,6 +2067,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\restaurant\\spaghetti-carbonara.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\spa_hero.jpeg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/spa/spa_hero.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\spa\\spa_hero.jpeg"
     },
     {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\welcome\\welcome.jpg",

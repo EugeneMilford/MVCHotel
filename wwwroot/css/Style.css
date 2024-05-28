@@ -272,13 +272,6 @@ Buttons
     }
 }
 
-/*-------------
-Navigation
--------------*/
-.navbar {
-    background-color: #5fc9d3;
-}
-
 /*----------------------
 Welcome
 ----------------------*/
@@ -642,56 +635,30 @@ Pages
 ------------*/
 
 /* Restaurant */
-..restaurant-heading {
-    position: relative;
-    padding: 260px 0px 190px 0px;
-    text-align: center;
-    overflow: hidden; /* Ensures pseudo-element does not overflow */
+/*** Services Start ***/
+.service .service-content-inner {
+    transition: 0.5s;
 }
 
-.restaurant-heading::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/img/restaurant/res_hero.jpeg'); /* Ensure the URL is correct */
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5; /* Adjust the opacity as needed */
-    z-index: -1; /* Places the pseudo-element behind the content */
-}
+    .service .service-content-inner:hover {
+        position: relative;
+        background: var(--bs-primary) !important;
+    }
 
-.restaurant-heading h4 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 20px;
-    position: relative; /* Ensure text is above the pseudo-element */
-    z-index: 1;
-}
+    .service .service-content-inner .service-content h5,
+    .service .service-content-inner .service-content p,
+    .service .service-content-inner .service-icon i {
+        transition: 0.5s;
+    }
 
-.restaurant-heading p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    position: relative; /* Ensure text is above the pseudo-element */
-    z-index: 1;
-}
+    .service .service-content-inner:hover .service-content h5,
+    .service .service-content-inner:hover .service-content p,
+    .service .service-content-inner:hover .service-icon i {
+        color: var(--bs-white) !important;
+    }
+/*** Service End ***/
 
-.restaurant .border-button a {
-    border-color: #fff;
-    color: #fff;
-}
 
-.page-heading .border-button a:hover {
-    border-color: #22b3c1;
-}
-.page-heading .border-button a:hover {
-    border-color: #22b3c1;
-}
 
 /*-------------
 Tables
@@ -777,31 +744,30 @@ Tables
                         background-color: #6382e6;
                     }
 
-                    .res-table .table-row .percentage .res .progress-bar.color-2 {
+                    .res-table .table-row .percentage .res .res-bar.color-2 {
                         background-color: #e66686;
                     }
-
-                    .progress-table .table-row .percentage .progress .progress-bar.color-3 {
+                    .res-table .table-row .percentage .res .res-bar.color-3 {
                         background-color: #f09359;
                     }
 
-                    .progress-table .table-row .percentage .progress .progress-bar.color-4 {
+                    .res-table .table-row .percentage .res .res-bar.color-4 {
                         background-color: #73fbaf;
                     }
 
-                    .progress-table .table-row .percentage .progress .progress-bar.color-5 {
+                    .res-table .table-row .percentage .res .res-bar.color-5 {
                         background-color: #73fbaf;
                     }
 
-                    .progress-table .table-row .percentage .progress .progress-bar.color-6 {
+                    .res-table .table-row .percentage .res .res-bar.color-6 {
                         background-color: #6382e6;
                     }
 
-                    .progress-table .table-row .percentage .progress .progress-bar.color-7 {
+                    .res-table .table-row .percentage .res .res-bar.color-7 {
                         background-color: #a367e7;
                     }
 
-                    .res-table .table-row .percentage .res .progress-bar.color-8 {
+                    .res .table-row .percentage .res .res-bar.color-8 {
                         background-color: #e66686;
                     }
 
@@ -856,11 +822,214 @@ Tables
         color: var(--bs-white) !important;
     }
 
+/*Res Heading*/
+.res-heading {
+    position: relative; /* Required for the pseudo-element to be positioned correctly */
+    padding: 260px 0px 190px 0px;
+    text-align: center;
+    overflow: hidden; /* Ensures the pseudo-element stays within the div */
+}
 
+    .res-heading::before {
+        content: '';
+        background-image: url('../img/restaurant/res_hero.jpeg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5; /* Set the opacity for the background image */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
+    }
+
+    .res-heading h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 20px;
+        position: relative; /* Ensures content is above the pseudo-element */
+        z-index: 1;
+    }
+
+    .res-heading h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .res-heading .border-button a {
+        border-color: #fff;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+        .res-heading .border-button a:hover {
+            border-color: #22b3c1;
+        }    
 
 /* Cinema */
+/*Cinema Heading*/
+.cinema-heading {
+    position: relative; /* Required for the pseudo-element to be positioned correctly */
+    padding: 260px 0px 190px 0px;
+    text-align: center;
+    overflow: hidden; /* Ensures the pseudo-element stays within the div */
+}
+
+    .cinema-heading::before {
+        content: '';
+        background-image: url('../img/cinema/cinema_hero.jpeg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5; /* Set the opacity for the background image */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
+    }
+
+    .cinema-heading h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 20px;
+        position: relative; /* Ensures content is above the pseudo-element */
+        z-index: 1;
+    }
+
+    .cinema-heading h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .cinema-heading .border-button a {
+        border-color: #fff;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+        .cinema-heading .border-button a:hover {
+            border-color: #22b3c1;
+        } 
 
 /* Spa */
+.spa-heading {
+    position: relative; /* Required for the pseudo-element to be positioned correctly */
+    padding: 260px 0px 190px 0px;
+    text-align: center;
+    overflow: hidden; /* Ensures the pseudo-element stays within the div */
+}
+
+    .spa-heading::before {
+        content: '';
+        background-image: url('../img/spa/spa_hero.jpeg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5; /* Set the opacity for the background image */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
+    }
+
+    .spa-heading h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 20px;
+        position: relative; /* Ensures content is above the pseudo-element */
+        z-index: 1;
+    }
+
+    .spa-heading h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .spa-heading .border-button a {
+        border-color: #fff;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+        .spa-heading .border-button a:hover {
+            border-color: #22b3c1;
+        } 
+
+/* Outdoors */
+.outdoor-heading {
+    position: relative; /* Required for the pseudo-element to be positioned correctly */
+    padding: 260px 0px 190px 0px;
+    text-align: center;
+    overflow: hidden; /* Ensures the pseudo-element stays within the div */
+}
+
+    .outdoor-heading::before {
+        content: '';
+        background-image: url('../img/Outdoors/outdoor_hero.jpeg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5; /* Set the opacity for the background image */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
+    }
+
+    .outdoor-heading h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 20px;
+        position: relative; /* Ensures content is above the pseudo-element */
+        z-index: 1;
+    }
+
+    .outdoor-heading h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .outdoor-heading .border-button a {
+        border-color: #fff;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+        .outdoor-heading .border-button a:hover {
+            border-color: #22b3c1;
+        } 
 
 
 

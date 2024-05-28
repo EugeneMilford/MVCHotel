@@ -229,6 +229,10 @@
       "PackagePath": "staticwebassets\\img\\Outdoors\\hiking.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\outdoor_hero.jpeg",
+      "PackagePath": "staticwebassets\\img\\Outdoors\\outdoor_hero.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\picnic.jpg",
       "PackagePath": "staticwebassets\\img\\Outdoors\\picnic.jpg"
     },
@@ -329,6 +333,10 @@
       "PackagePath": "staticwebassets\\img\\bg-img\\hero-3.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\cinema\\cinema_hero.jpeg",
+      "PackagePath": "staticwebassets\\img\\cinema\\cinema_hero.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\hero-1.jpg",
       "PackagePath": "staticwebassets\\img\\hero-1.jpg"
     },
@@ -419,6 +427,10 @@
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\spaghetti-carbonara.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\spaghetti-carbonara.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\spa_hero.jpeg",
+      "PackagePath": "staticwebassets\\img\\spa\\spa_hero.jpeg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\welcome\\welcome.jpg",
