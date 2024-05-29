@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I+aYVfmjKFLW5X/DRlyWF7A9XtSxBpSsVpm4V36gU8A=",
+  "Hash": "16ZHF5gVgt8FEYCCMF9SyBw7kHLLbJ+AVW/QXP4Ibs4=",
   "Source": "HotelManagement",
   "BasePath": "_content/HotelManagement",
   "Mode": "Default",
@@ -1991,6 +1991,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\restaurant\\cog-au-vin.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\garlic-prawns.jpg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/restaurant/garlic-prawns.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\restaurant\\garlic-prawns.jpg"
     },
     {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\Lamb-Kebab.jpg",

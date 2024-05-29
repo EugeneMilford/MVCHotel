@@ -417,6 +417,10 @@
       "PackagePath": "staticwebassets\\img\\restaurant\\cog-au-vin.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\garlic-prawns.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\garlic-prawns.jpg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\res_hero.jpeg",
       "PackagePath": "staticwebassets\\img\\restaurant\\res_hero.jpeg"
     },

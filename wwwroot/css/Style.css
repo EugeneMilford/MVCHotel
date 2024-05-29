@@ -177,9 +177,9 @@ Buttons
     transition: opacity .5s linear;
 }
 
-    .secondary-button:hover:before {
-        opacity: 1;
-    }
+.secondary-button:hover:before {
+    opacity: 1;
+}
 
 .tertiary-button {
     background: #ed4126;
@@ -285,36 +285,75 @@ Welcome
 Hero Section
 -----------------*/
 .page-heading {
-    background-image: url(/img/home/hero.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
     padding: 260px 0px 190px 0px;
     text-align: center;
+    overflow: hidden;
 }
 
-.page-heading h4 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.page-heading h2 {
-    font-size: 50px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.page-heading .border-button a {
-    border-color: #fff;
-    color: #fff;
-}
-
-    .page-heading .border-button a:hover {
-        border-color: #22b3c1;
+    .page-heading::before {
+        content: '';
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
+        z-index: -1;
     }
+
+    .page-heading h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-heading h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-heading .border-button a {
+        border-color: #fff;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+        .page-heading .border-button a:hover {
+            border-color: #22b3c1;
+        }
+
+/* Specific Background Images */
+.home-heading::before {
+    background-image: url('../img/home/hero.jpg');
+}
+
+.restaurant-heading::before {
+    background-image: url('../img/restaurant/res_hero.jpeg');
+}
+
+.spa-heading::before {
+    background-image: url('../img/spa/spa_hero.jpeg');
+}
+
+.cinema-heading::before {
+    background-image: url('../img/cinema/cinema_hero.jpeg');
+}
+
+.outdoor-heading::before {
+    background-image: url('../img/Outdoors/outdoor_hero.jpeg');
+}
 
 /*-------------
 About
@@ -771,6 +810,7 @@ Tables
                         background-color: #e66686;
                     }
 
+/*Opening hours*/
 .opening-hours-widget {
     padding: 50px 30px;
     background-color: #b4bec5;
@@ -822,215 +862,17 @@ Tables
         color: var(--bs-white) !important;
     }
 
-/*Res Heading*/
-.res-heading {
-    position: relative; /* Required for the pseudo-element to be positioned correctly */
-    padding: 260px 0px 190px 0px;
-    text-align: center;
-    overflow: hidden; /* Ensures the pseudo-element stays within the div */
+    /**Table*/
+table td,
+table th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-    .res-heading::before {
-        content: '';
-        background-image: url('../img/restaurant/res_hero.jpeg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.5; /* Set the opacity for the background image */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
-    }
-
-    .res-heading h4 {
-        font-size: 20px;
-        font-weight: 500;
-        color: #fff;
-        margin-bottom: 20px;
-        position: relative; /* Ensures content is above the pseudo-element */
-        z-index: 1;
-    }
-
-    .res-heading h2 {
-        font-size: 50px;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 30px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .res-heading .border-button a {
-        border-color: #fff;
-        color: #fff;
-        position: relative;
-        z-index: 1;
-    }
-
-        .res-heading .border-button a:hover {
-            border-color: #22b3c1;
-        }    
-
-/* Cinema */
-/*Cinema Heading*/
-.cinema-heading {
-    position: relative; /* Required for the pseudo-element to be positioned correctly */
-    padding: 260px 0px 190px 0px;
-    text-align: center;
-    overflow: hidden; /* Ensures the pseudo-element stays within the div */
+tbody td {
+    font-weight: 500;
+    color: #999999;
 }
-
-    .cinema-heading::before {
-        content: '';
-        background-image: url('../img/cinema/cinema_hero.jpeg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.5; /* Set the opacity for the background image */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
-    }
-
-    .cinema-heading h4 {
-        font-size: 20px;
-        font-weight: 500;
-        color: #fff;
-        margin-bottom: 20px;
-        position: relative; /* Ensures content is above the pseudo-element */
-        z-index: 1;
-    }
-
-    .cinema-heading h2 {
-        font-size: 50px;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 30px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .cinema-heading .border-button a {
-        border-color: #fff;
-        color: #fff;
-        position: relative;
-        z-index: 1;
-    }
-
-        .cinema-heading .border-button a:hover {
-            border-color: #22b3c1;
-        } 
-
-/* Spa */
-.spa-heading {
-    position: relative; /* Required for the pseudo-element to be positioned correctly */
-    padding: 260px 0px 190px 0px;
-    text-align: center;
-    overflow: hidden; /* Ensures the pseudo-element stays within the div */
-}
-
-    .spa-heading::before {
-        content: '';
-        background-image: url('../img/spa/spa_hero.jpeg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.5; /* Set the opacity for the background image */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
-    }
-
-    .spa-heading h4 {
-        font-size: 20px;
-        font-weight: 500;
-        color: #fff;
-        margin-bottom: 20px;
-        position: relative; /* Ensures content is above the pseudo-element */
-        z-index: 1;
-    }
-
-    .spa-heading h2 {
-        font-size: 50px;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 30px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .spa-heading .border-button a {
-        border-color: #fff;
-        color: #fff;
-        position: relative;
-        z-index: 1;
-    }
-
-        .spa-heading .border-button a:hover {
-            border-color: #22b3c1;
-        } 
-
-/* Outdoors */
-.outdoor-heading {
-    position: relative; /* Required for the pseudo-element to be positioned correctly */
-    padding: 260px 0px 190px 0px;
-    text-align: center;
-    overflow: hidden; /* Ensures the pseudo-element stays within the div */
-}
-
-    .outdoor-heading::before {
-        content: '';
-        background-image: url('../img/Outdoors/outdoor_hero.jpeg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.5; /* Set the opacity for the background image */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
-    }
-
-    .outdoor-heading h4 {
-        font-size: 20px;
-        font-weight: 500;
-        color: #fff;
-        margin-bottom: 20px;
-        position: relative; /* Ensures content is above the pseudo-element */
-        z-index: 1;
-    }
-
-    .outdoor-heading h2 {
-        font-size: 50px;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 30px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .outdoor-heading .border-button a {
-        border-color: #fff;
-        color: #fff;
-        position: relative;
-        z-index: 1;
-    }
-
-        .outdoor-heading .border-button a:hover {
-            border-color: #22b3c1;
-        } 
-
-
 
 

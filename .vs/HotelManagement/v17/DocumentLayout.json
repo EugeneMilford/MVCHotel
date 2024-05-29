@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\Projects\\ASP NET MVC\\HotelManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\views\\retreat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|solutionrelative:views\\retreat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\views\\cinemas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|solutionrelative:views\\cinemas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|solutionrelative:views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|solutionrelative:views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FDE4CE2-4478-4080-9D4C-397F649F3D8A}|HotelManagement.csproj|d:\\projects\\asp net mvc\\hotelmanagement\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,76 +82,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Retreat\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Retreat\\Index.cshtml",
-              "ToolTip": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Retreat\\Index.cshtml",
-              "RelativeToolTip": "Views\\Retreat\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-28T18:29:58.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Cinemas\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Cinemas\\Index.cshtml",
               "ToolTip": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Cinemas\\Index.cshtml",
               "RelativeToolTip": "Views\\Cinemas\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T13:25:15.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Restaurants\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Restaurants\\Create.cshtml",
+              "ToolTip": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Restaurants\\Create.cshtml",
+              "RelativeToolTip": "Views\\Restaurants\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-28T16:55:46.451Z",
+              "WhenOpened": "2024-05-29T11:58:13.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-28T15:24:10.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Restaurants\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Restaurants\\Index.cshtml",
               "ToolTip": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Restaurants\\Index.cshtml",
               "RelativeToolTip": "Views\\Restaurants\\Index.cshtml",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAAJ4AAAAGAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGMAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-24T12:27:33.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Style.css",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\css\\Style.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\Style.css",
               "ToolTip": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\css\\Style.css",
               "RelativeToolTip": "wwwroot\\css\\Style.css",
-              "ViewState": "AQIAAMQDAAAAAAAAAAAQwNQDAAAAAAAA",
+              "ViewState": "AQIAAFgDAAAAAAAAAAAAAGADAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-05-22T19:20:28.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Hotel.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Models\\Hotel.cs",
               "RelativeDocumentMoniker": "Models\\Hotel.cs",
@@ -167,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -179,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Hotel.css",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\css\\Hotel.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\Hotel.css",
@@ -191,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Restaurant.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Models\\Restaurant.cs",
               "RelativeDocumentMoniker": "Models\\Restaurant.cs",
@@ -199,12 +182,11 @@
               "RelativeToolTip": "Models\\Restaurant.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T15:21:32.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T15:21:32.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
@@ -212,12 +194,11 @@
               "RelativeToolTip": "Models\\Employee.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T20:12:40.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T20:12:40.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Activities.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Models\\Activities.cs",
               "RelativeDocumentMoniker": "Models\\Activities.cs",
@@ -229,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "CinemasController.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Controllers\\CinemasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CinemasController.cs",
@@ -241,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "PlayArea.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Models\\PlayArea.cs",
               "RelativeDocumentMoniker": "Models\\PlayArea.cs",
@@ -253,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "HotelContext.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Data\\HotelContext.cs",
               "RelativeDocumentMoniker": "Data\\HotelContext.cs",
@@ -265,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "BlogController.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Controllers\\BlogController.cs",
               "RelativeDocumentMoniker": "Controllers\\BlogController.cs",
@@ -277,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "cover.css",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\css\\cover.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\cover.css",
@@ -289,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "bootstrap.js",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
               "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
@@ -301,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "WelcomeController.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Controllers\\WelcomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\WelcomeController.cs",
@@ -313,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "20240111103311_InitialCreate.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET MVC\\HotelManagement\\Migrations\\20240111103311_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20240111103311_InitialCreate.cs",
