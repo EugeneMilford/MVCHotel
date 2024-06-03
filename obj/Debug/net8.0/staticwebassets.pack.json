@@ -201,10 +201,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\1.jpeg",
-      "PackagePath": "staticwebassets\\img\\1.jpeg"
-    },
-    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\birds.jpg",
       "PackagePath": "staticwebassets\\img\\Outdoors\\birds.jpg"
     },
@@ -337,12 +333,20 @@
       "PackagePath": "staticwebassets\\img\\cinema\\cinema_hero.jpeg"
     },
     {
-      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\hero-1.jpg",
-      "PackagePath": "staticwebassets\\img\\hero-1.jpg"
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\cinema\\movie1.jpg",
+      "PackagePath": "staticwebassets\\img\\cinema\\movie1.jpg"
     },
     {
-      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\hero-2.jpg",
-      "PackagePath": "staticwebassets\\img\\hero-2.jpg"
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\cinema\\movie2.jpg",
+      "PackagePath": "staticwebassets\\img\\cinema\\movie2.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\cinema\\movie3.jpg",
+      "PackagePath": "staticwebassets\\img\\cinema\\movie3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\cinema\\movie4.jpg",
+      "PackagePath": "staticwebassets\\img\\cinema\\movie4.jpg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\about.jpg",
@@ -401,12 +405,20 @@
       "PackagePath": "staticwebassets\\img\\home\\suite.jpeg"
     },
     {
-      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\hotel.jpeg",
-      "PackagePath": "staticwebassets\\img\\hotel.jpeg"
-    },
-    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\Lamb-Kebab.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\Lamb-Kebab.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\bruschetta.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\bruschetta.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\caesar-salad.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\caesar-salad.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\caprese-salad.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\caprese-salad.jpg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\chicken-enchiladas.jpg",

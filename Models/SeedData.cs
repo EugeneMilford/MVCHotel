@@ -15,7 +15,7 @@ namespace HotelManagement.Models
                     DbContextOptions<HotelContext>>()))
             {
                 // Look for any Employees
-                if (context.Hotel.Any())
+                if (!context.Hotel.Any())
                 {
                     return;   // DB has been seeded
                 }

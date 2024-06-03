@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<HotelManagement.Models.Spa>
 
 <!-- Hero Section -->
 <div class="page-heading spa-heading">
@@ -12,6 +8,108 @@
                 <h4>Hotel Spa</h4>
                 <h2>Amazing Prices &amp; More</h2>
                 <div class="border-button"><a href="about.html">Discover More</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Table -->
+<div class="container section_gap">
+    <div>
+        <h4>Your Bookings</h4>
+    </div>
+    <div class="row">
+        <div class="col-8 section-top-border">
+            <div class="table-responsive bg-white">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">@Html.DisplayNameFor(model => model.SpaCustomerName)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.BookingDate)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.StartTime)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.EndTime)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.SpaPackage)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.Service)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.IsConfirmed)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.Price)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SpaCustomerName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BookingDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StartTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.EndTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SpaPackage)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Service)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IsConfirmed)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Price)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.SpaId">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.SpaId">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.SpaId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <p>
+                <a class="theme-button" asp-action="Create">Add New</a>
+            </p>
+        </div>
+        <div class="col-4">
+            <div class="opening-hours-widget mt-50">
+                <h6>Opening Hours</h6>
+                <ul class="opening-hours">
+                    <li>
+                        <p>Monday</p>
+                        <p>8 AM - 8 PM</p>
+                    </li>
+                    <li>
+                        <p>Tuesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Wednesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Thursday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Friday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Saturday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Sunday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
