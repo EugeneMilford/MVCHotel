@@ -1,51 +1,65 @@
 ﻿@model HotelManagement.Models.Cinema
 
-@{
-    ViewData["Title"] = "Delete";
-}
+<!-- Delete -->
+<div class="amazing-deals">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading text-center">
+                    <h2>Delete Movie Ticket</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mx-auto">
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="align-self-center">
+                                <div class="content">
+                                    <h4>Movie Ticket</h4>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.GuestName) : @Html.DisplayFor(model => model.GuestName)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.BookingTime) : @Html.DisplayFor(model => model.BookingTime)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.MovieTitle) : @Html.DisplayFor(model => model.MovieTitle)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.NumberOfTickets) : @Html.DisplayFor(model => model.NumberOfTickets)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.Confirmed) : @Html.DisplayFor(model => model.Confirmed)
+                                        </span>
+                                    </div>
+                                    <p>Are you sure you want to delete this movie ticket?</p>
 
-<h1>Delete</h1>
-
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Cinema</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.GuestName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BookingTime)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MovieTitle)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NumberOfTickets)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Confirmed)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.GuestName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BookingTime)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MovieTitle)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NumberOfTickets)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Confirmed)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="CinemaID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+                                    <div class="row">
+                                        <div class="col-8 mx-auto">
+                                            <div class="d-flex align-items-center">
+                                                <form asp-action="Delete" method="post">
+                                                    <input type="hidden" name="id" value="@Model.CinemaID" />
+                                                    <button type="submit" class="tertiary-button">Delete Ticket</button>
+                                                </form>
+                                                <a asp-action="Index" class="secondary-button">Back to Cinema</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

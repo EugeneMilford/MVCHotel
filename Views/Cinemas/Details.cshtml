@@ -1,5 +1,61 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model HotelManagement.Models.Cinema
+
+<!-- Details -->
+<div class="amazing-deals">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading text-center">
+                    <h2>Cinema Details</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mx-auto">
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="align-self-center">
+                                <div class="content">
+                                    <h4>Cinema Booking</h4>
+
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.GuestName) : @Html.DisplayFor(model => model.GuestName)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.BookingTime) : @Html.DisplayFor(model => model.BookingTime)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.MovieTitle) : @Html.DisplayFor(model => model.MovieTitle)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.NumberOfTickets) : @Html.DisplayFor(model => model.NumberOfTickets)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.Confirmed) : @Html.DisplayFor(model => model.Confirmed)
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 mx-auto">
+                                            <div class="d-flex align-items-center">
+                                                <a asp-action="Edit" asp-route-id="@Model?.CinemaID" class="tertiary-button">Edit</a>
+                                                <a asp-action="Index" class="secondary-button">Back to Cinema</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
