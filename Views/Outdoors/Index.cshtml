@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<HotelManagement.Models.Activities>
 
 <!-- Hero Section -->
 <div class="page-heading outdoor-heading">
@@ -12,6 +8,96 @@
                 <h4>Outdoor Activities</h4>
                 <h2>Amazing Prices &amp; More</h2>
                 <div class="border-button"><a href="about.html">Discover More</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Table -->
+<div class="container section_gap">
+    <div>
+        <h4>Your Bookings</h4>
+    </div>
+    <div class="row">
+        <div class="col-8 section-top-border">
+            <div class="table-responsive bg-white">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">@Html.DisplayNameFor(model => model.GuestName)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.NumberofPeople)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.BookingTime)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.ActivityName)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.Confirmed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GuestName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NumberofPeople)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BookingTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ActivityName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Confirmed)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.ActivityID">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.ActivityID">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.ActivityID">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <p>
+                <a class="theme-button" asp-action="Create">Add New</a>
+            </p>
+        </div>
+        <div class="col-4">
+            <div class="opening-hours-widget mt-50">
+                <h6>Opening Hours</h6>
+                <ul class="opening-hours">
+                    <li>
+                        <p>Monday</p>
+                        <p>8 AM - 8 PM</p>
+                    </li>
+                    <li>
+                        <p>Tuesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Wednesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Thursday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Friday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Saturday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Sunday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -92,5 +178,145 @@
         </div>
     </div>
 </div>
+
+<!-- Outdoors Benefits -->
+<section>
+    <div class="section-top-border">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Benefits</h5>
+            <h1 class="mb-0">Cinema Benefits</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="single-defination">
+                    <h4 class="mb-20">Entertainment Options</h4>
+                    <p>
+                        Staying at a hotel with an in-house cinema offers guests a unique and convenient entertainment option that enhances their overall experience.
+                        Instead of having to search for local movie theaters or deal with the hassle of transportation, guests can enjoy the latest films right within the comfort of their accommodation
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-defination">
+                    <h4 class="mb-20">Viewing Experience</h4>
+                    <p>
+                        The hotel cinema also provides an intimate and exclusive viewing experience. Unlike crowded public theaters, hotel cinemas typically offer a
+                        more private setting with fewer seats, creating a cozy and comfortable atmosphere
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-defination">
+                    <h4 class="mb-20">Shared Memories</h4>
+                    <p>
+                        Movie nights often bring together individuals and families who share similar interests, fostering a sense of community within the hotel. This can be especially beneficial for solo travelers or those
+                        looking to make new friends during their trip
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Packages -->
+<div class="visit-country">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="section-heading">
+                    <h2>Visit One Of Our Countries Now</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="items">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-5">
+                                    <div class="image">
+                                        <img src="~/img/Outdoors/canoe.jpeg" alt="" width="200" height="150">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-7">
+                                    <div class="right-content">
+                                        <h4>CANOE</h4>
+                                        <span>Europe</span>
+                                        <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-5">
+                                    <div class="image">
+                                        <img src="~/img/Outdoors/canoe.jpeg" alt="" width="200" height="150">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-7">
+                                    <div class="right-content">
+                                        <h4>FISHING</h4>
+                                        <span>Europe</span>
+                                        <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="items">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-5">
+                                    <div class="image">
+                                        <img src="~/img/Outdoors/canoe.jpeg" alt="" width="200" height="150">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-7">
+                                    <div class="right-content">
+                                        <h4>CANOE</h4>
+                                        <span>Europe</span>
+                                        <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-5">
+                                    <div class="image">
+                                        <img src="~/img/Outdoors/canoe.jpeg" alt="" width="200" height="150">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-7">
+                                    <div class="right-content">
+                                        <h4>FISHING</h4>
+                                        <span>Europe</span>
+                                        <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 

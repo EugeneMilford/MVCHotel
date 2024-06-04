@@ -209,6 +209,10 @@
       "PackagePath": "staticwebassets\\img\\Outdoors\\botanical.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\canoe.jpeg",
+      "PackagePath": "staticwebassets\\img\\Outdoors\\canoe.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\canoeing.jpg",
       "PackagePath": "staticwebassets\\img\\Outdoors\\canoeing.jpg"
     },
@@ -219,6 +223,10 @@
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\golf.jpg",
       "PackagePath": "staticwebassets\\img\\Outdoors\\golf.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\golfing.jpeg",
+      "PackagePath": "staticwebassets\\img\\Outdoors\\golfing.jpeg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\hiking.jpg",
