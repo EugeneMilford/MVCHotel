@@ -221,6 +221,10 @@
       "PackagePath": "staticwebassets\\img\\Outdoors\\fishing.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\fishing01.jpeg",
+      "PackagePath": "staticwebassets\\img\\Outdoors\\fishing01.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\golf.jpg",
       "PackagePath": "staticwebassets\\img\\Outdoors\\golf.jpg"
     },
@@ -239,6 +243,10 @@
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\picnic.jpg",
       "PackagePath": "staticwebassets\\img\\Outdoors\\picnic.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\picnicking.jpeg",
+      "PackagePath": "staticwebassets\\img\\Outdoors\\picnicking.jpeg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\yoga.jpg",
@@ -389,6 +397,18 @@
       "PackagePath": "staticwebassets\\img\\home\\offers.jpeg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\package01.jpeg",
+      "PackagePath": "staticwebassets\\img\\home\\package01.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\package02.jpeg",
+      "PackagePath": "staticwebassets\\img\\home\\package02.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\package03.jpeg",
+      "PackagePath": "staticwebassets\\img\\home\\package03.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\penthouse-room.jpeg",
       "PackagePath": "staticwebassets\\img\\home\\penthouse-room.jpeg"
     },
@@ -417,12 +437,20 @@
       "PackagePath": "staticwebassets\\img\\restaurant\\Lamb-Kebab.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\berry-pavlova-cake.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\berry-pavlova-cake.jpg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\bruschetta.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\bruschetta.jpg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\caesar-salad.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\caesar-salad.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\calamari.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\calamari.jpg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\caprese-salad.jpg",
@@ -433,12 +461,36 @@
       "PackagePath": "staticwebassets\\img\\restaurant\\chicken-enchiladas.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\chocolate-lava-cake.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\chocolate-lava-cake.jpg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\cog-au-vin.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\cog-au-vin.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\fettuccine-alfredo.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\fettuccine-alfredo.jpg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\garlic-prawns.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\garlic-prawns.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\grilled-ribeye-steak.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\grilled-ribeye-steak.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\margherita-pizza.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\margherita-pizza.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\minestrone-soup.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\minestrone-soup.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\pan-seared-salmon.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\pan-seared-salmon.jpg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\res_hero.jpeg",
@@ -451,6 +503,34 @@
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\spaghetti-carbonara.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\spaghetti-carbonara.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\tomato-basil-soup.jpg",
+      "PackagePath": "staticwebassets\\img\\restaurant\\tomato-basil-soup.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\Hot-stone-therapy.jpg",
+      "PackagePath": "staticwebassets\\img\\spa\\Hot-stone-therapy.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\body-scrub.jpeg",
+      "PackagePath": "staticwebassets\\img\\spa\\body-scrub.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\facial-rejuvenation.jpg",
+      "PackagePath": "staticwebassets\\img\\spa\\facial-rejuvenation.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\hydrotherapy.jpg",
+      "PackagePath": "staticwebassets\\img\\spa\\hydrotherapy.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\spa01.jpeg",
+      "PackagePath": "staticwebassets\\img\\spa\\spa01.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\spa02.jpeg",
+      "PackagePath": "staticwebassets\\img\\spa\\spa02.jpeg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\spa\\spa_hero.jpeg",

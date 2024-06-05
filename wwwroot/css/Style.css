@@ -1181,4 +1181,143 @@ Visit Country Style
             }
 
 
+/*-------------
+Footer
+-------------*/
+.footer-area {
+    background-color: #262d79;
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+}
+
+/*----------------
+Pricing
+----------------*/
+.pricing-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    width: 100%;
+    max-width: 23rem;
+    min-height: 35rem;
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-blue);
+    background: #F7FAFF;
+}
+
+.pricing-card--primary {
+    background: white;
+}
+
+.pricing-card__price {
+    background: var(--background-blue);
+    width: 100%;
+    min-height: 3.5rem;
+    padding: 0.4rem 1rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+    .pricing-card__price > s {
+        color: var(--text-color-neutral);
+        font-size: 0.875rem;
+    }
+
+.pricing-card > h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.pricing-card > .divider {
+    border: 1px solid #E6E8F0;
+}
+
+.pricing-card > .enroll {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    background: #605DFF1A;
+    color: var(--primary-blue-violet);
+    text-decoration: none;
+    letter-spacing: 0.75px;
+    border: 0px solid var(--primary-blue-violet);
+}
+
+    .pricing-card > .enroll:hover {
+        border: 1px solid var(--primary-blue-violet);
+        transition: border-width 0.2s linear;
+    }
+
+.pricing-card--primary > .enroll {
+    background: linear-gradient( 90deg, #605DFF, #AD63F6 50%, #AD63F6 50%, #605DFF 80%, #5DA8FF 100% );
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    transition: background-position 1s;
+    color: white;
+}
+
+    .pricing-card--primary > .enroll:hover, .enroll:focus {
+        border: none;
+        background-position: 100% 100%;
+        transition: background-position 1s;
+    }
+
+.pricing-card > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .pricing-card > ul > li {
+        position: relative;
+        font-weight: 500;
+        list-style-type: none;
+        font-size: 0.875rem;
+    }
+
+        .pricing-card > ul > li:before {
+            content: "";
+            position: absolute;
+            top: -0.125rem;
+            left: -2rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            background-image: url('assets/benefit.svg');
+            background-repeat: no-repeat;
+        }
+
+.pricing-card > .plan-icon {
+    position: absolute;
+    left: -1.25rem;
+    top: -1.875rem;
+}
 
