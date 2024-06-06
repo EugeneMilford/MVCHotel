@@ -30,7 +30,6 @@
                             <th scope="col">@Html.DisplayNameFor(model => model.SpaPackage)</th>
                             <th scope="col">@Html.DisplayNameFor(model => model.Service)</th>
                             <th scope="col">@Html.DisplayNameFor(model => model.IsConfirmed)</th>
-                            <th scope="col">@Html.DisplayNameFor(model => model.Price)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -57,9 +56,6 @@
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.IsConfirmed)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Price)
                                 </td>
                                 <td>
                                     <a asp-action="Edit" asp-route-id="@item.SpaId">Edit</a> |

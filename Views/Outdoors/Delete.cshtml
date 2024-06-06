@@ -1,5 +1,65 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model HotelManagement.Models.Activities
+
+<!-- Delete -->
+<div class="amazing-deals">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading text-center">
+                    <h2>Delete Activity</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mx-auto">
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="align-self-center">
+                                <div class="content">
+                                    <h4>Movie Ticket</h4>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.GuestName) : @Html.DisplayFor(model => model.GuestName)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.NumberofPeople) : @Html.DisplayFor(model => model.NumberofPeople)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.BookingTime) : @Html.DisplayFor(model => model.BookingTime)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.ActivityName) : @Html.DisplayFor(model => model.ActivityName)
+                                        </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="list">
+                                            @Html.DisplayNameFor(model => model.Confirmed) : @Html.DisplayFor(model => model.Confirmed)
+                                        </span>
+                                    </div>
+                                    <p>Are you sure you want to delete this activity?</p>
+
+                                    <div class="row">
+                                        <div class="col-8 mx-auto">
+                                            <div class="d-flex align-items-center">
+                                                <form asp-action="Delete" method="post">
+                                                    <input type="hidden" name="id" value="@Model.ActivityID" />
+                                                    <button type="submit" class="tertiary-button">Delete Activity</button>
+                                                </form>
+                                                <a asp-action="Index" class="secondary-button">Back to Outdoor Activities</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

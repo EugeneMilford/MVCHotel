@@ -1,5 +1,95 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model HotelManagement.Models.Spa
+
+<!-- Update -->
+<div class="reservation-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading text-center">
+                    <h2>Edit Spa Booking</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <form id="reservation-form" asp-action="Edit" method="post">
+                    <input type="hidden" asp-for="SpaId" />
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>Edit Your <em>Spa Booking</em> Through This <em>Form</em></h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="SpaCustomerName" class="form-label">Customer Name</label>
+                                <input asp-for="SpaCustomerName" class="form-control" autocomplete="on" required />
+                                <span asp-validation-for="SpaCustomerName" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="BookingDate" class="form-label">Date</label>
+                                <input asp-for="BookingDate" type="datetime-local" class="form-control" required />
+                                <span asp-validation-for="BookingDate" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="StartTime" class="form-label">Start</label>
+                                <input asp-for="StartTime" type="datetime-local" class="form-control" required />
+                                <span asp-validation-for="StartTime" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="EndTime" class="form-label">End</label>
+                                <input asp-for="EndTime" type="datetime-local" class="form-control" required />
+                                <span asp-validation-for="EndTime" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label for="choosePackage" class="form-label">Spa Package</label>
+                                <select asp-for="SpaPackage" name="SpaPackage" class="form-select" aria-label="Default select example" id="choosePackage" onChange="this.form.click()">
+                                    <option type="checkbox" name="option1" value="Detox Package">Detox Package</option>
+                                    <option value="Relaxation Retreat Package">Relaxation Retreat Package</option>
+                                    <option value="Luxury Indulgence Package">Luxury Indulgence Package</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label for="chooseService" class="form-label">Spa Service</label>
+                                <select asp-for="Service" name="Service" class="form-select" aria-label="Default select example" id="chooseService" onChange="this.form.click()">
+                                    <option type="checkbox" name="option1" value="Full-body Massage">Full-body Massage</option>
+                                    <option value="Body Scrub">Body Scrub</option>
+                                    <option value="Hydrotherapy">Hydrotherapy</option>
+                                    <option value="Hot Stone Therapy">Hot Stone Therapy</option>
+                                    <option value="Seaweed Body Wrap">Seaweed Body Wrap</option>
+                                    <option value="Herbal Tea Service">Herbal Tea Service</option>
+                                    <option value="Deep Tissue Massage">Deep Tissue Massage</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="IsConfirmed" class="form-label">Confirmed</label>
+                                <input asp-for="IsConfirmed" type="checkbox" class="form-check-input" />
+                                <span asp-validation-for="IsConfirmed" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <button type="submit" class="tertiary-button">Edit Spa Booking</button>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <a asp-action="Index" class="secondary-button">Back to Spa</a>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
