@@ -1,329 +1,404 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
-<section class="blog_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="blog_left_sidebar">
-                            <article class="row blog_item">
-                               <div class="col-md-3">
-                                   <div class="blog_info text-right">
-                                        <div class="post_tag">
-                                            <a href="#">Food,</a>
-                                            <a href="#">Technology,</a>
-                                            <a href="#">Politics,</a>
-                                            <a href="#">Lifestyle</a>
-                                        </div>
-                                        <ul class="blog_meta list_style">
-                                            <li><a href="#">By Author<i class="lnr lnr-user"></i></a></li>
-                                            <li><a href="#">Jan 2024<i class="lnr lnr-calendar-full"></i></a></li>
-                                            <li><a href="#">688 Views<i class="lnr lnr-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                                <div class="col-md-9">
-                                    <div class="blog_post">
-                                        <img src="~/img/premium_photo-1663013123196-f83decee810f.jpeg" alt="">
-                                        <div class="blog_details">
-                                            <a href="#"><h2>Blog 1</h2></a>
-                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                            <a href="#" class="view_btn button_hover">View More</a>
-                                        </div>
-                                    </div>
+﻿<!-- Blog Posts -->
+<div class="background">
+    <div class="centering">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Blogs</h5>
+            <h1 class="mb-0">Popular Blogs</h1>
+        </div>
+        <div class="articles">
+            <article>
+                <figure>
+                    <img src="~/img/blogs/hotel.jpeg"
+                         alt="Preview">
+                </figure>
+                <div class="article-preview">
+                    <h2>A Home Away from Home</h2>
+                    <p>
+                        In a world where travel often means sacrificing comfort for adventure or convenience for affordability, finding a place that feels like a true home away from home can be a rarity. However, nestled 
+                        in the heart of Grand Hotel, the Grand Hotel stands as a beacon of hospitality, offering guests an unparalleled experience
+                        <a href="#" class="read-more" title="Read More" data-bs-toggle="modal" data-bs-target="#hotelModal">
+                            Read more
+                        </a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="hotelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="hotelModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="hotelModalLabel">A Grand Welcome</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                            </article>
-                            <article class="row blog_item">
-                               <div class="col-md-3">
-                                   <div class="blog_info text-right">
-                                        <div class="post_tag">
-                                            <a href="#">Food,</a>
-                                            <a href="#">Technology,</a>
-                                            <a href="#">Politics,</a>
-                                            <a href="#">Lifestyle</a>
-                                        </div>
-                                        <ul class="blog_meta list_style">
-                                            <li><a href="#">Mark wiens<i class="lnr lnr-user"></i></a></li>
-                                            <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                            <li><a href="#">324 Views<i class="lnr lnr-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                                <div class="col-md-9">
-                                    <div class="blog_post">
-                                        <img src="image/blog/main-blog/m-blog-2.jpg" alt="">
-                                        <div class="blog_details">
-                                            <a href="#"><h2>Blog 2</h2></a>
-                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                            <a href="#" class="view_btn button_hover">View More</a>
-                                        </div>
-                                    </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Luxurious Accommodations
+                                    </h5>
+                                    <p>
+                                        The Grand Hotel offers a variety of accommodations to suit every traveler's needs, from cozy single rooms to spacious suites. Each room is meticulously designed with comfort and style in 
+                                        mind, featuring plush bedding, elegant furnishings, and modern amenities such as flat-screen TVs, high-speed internet, and fully stocked minibars
+                                    </p>
                                 </div>
-                            </article>
-                            <article class="row blog_item">
-                               <div class="col-md-3">
-                                   <div class="blog_info text-right">
-                                        <div class="post_tag">
-                                            <a href="#">Food,</a>
-                                            <a href="#">Technology,</a>
-                                            <a href="#">Politics,</a>
-                                            <a href="#">Lifestyle</a>
-                                        </div>
-                                        <ul class="blog_meta list_style">
-                                            <li><a href="#">Mark wiens<i class="lnr lnr-user"></i></a></li>
-                                            <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                            <li><a href="#">1.2M Views<i class="lnr lnr-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                                <div class="col-md-9">
-                                    <div class="blog_post">
-                                        <img src="image/blog/main-blog/m-blog-3.jpg" alt="">
-                                        <div class="blog_details">
-                                            <a href="#"><h2>Blog 3</h2></a>
-                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                            <a href="#" class="view_btn button_hover">View More</a>
-                                        </div>
-                                    </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Dining Excellence
+                                    </h5>
+                                    <p>
+                                        Food lovers rejoice – the Grand Hotel boasts an array of dining options to tantalize your taste buds. From gourmet cuisine at the fine dining restaurant to casual fare at the bistro-style 
+                                        café, there's something for every palate.
+                                        <br />
+                                        Start your day with a sumptuous breakfast buffet featuring an array of fresh pastries, fruits, and made-to-order omelets. For lunch, indulge in a light salad or sandwich by the pool, or 
+                                        savor a decadent three-course meal in the elegant dining room. And for dinner, treat yourself to a culinary journey with expertly crafted dishes showcasing the finest local and 
+                                        international ingredients
+                                    </p>
                                 </div>
-                            </article>
-                            <article class="row blog_item">
-                               <div class="col-md-3">
-                                   <div class="blog_info text-right">
-                                        <div class="post_tag">
-                                            <a href="#">Food,</a>
-                                            <a href="#">Technology,</a>
-                                            <a href="#">Politics,</a>
-                                            <a href="#">Lifestyle</a>
-                                        </div>
-                                        <ul class="blog_meta list_style">
-                                            <li><a href="#">Mark wiens<i class="lnr lnr-user"></i></a></li>
-                                            <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                            <li><a href="#">1.2M Views<i class="lnr lnr-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                                <div class="col-md-9">
-                                    <div class="blog_post">
-                                        <img src="image/blog/main-blog/m-blog-4.jpg" alt="">
-                                        <div class="blog_details">
-                                            <a href="#"><h2>Blog 4</h2></a>
-                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                            <a href="#" class="view_btn button_hover">View More</a>
-                                        </div>
-                                    </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Unparalleled Amenities
+                                    </h5>
+                                    <p>
+                                        Beyond luxurious accommodations and exquisite dining, the Grand Hotel offers a wealth of amenities to ensure your stay is nothing short of perfect. Take a dip in the sparkling outdoor pool, 
+                                        surrounded by lush tropical gardens and swaying palm trees. Work up a sweat in the state-of-the-art fitness center, equipped with the latest cardio and strength training equipment
+                                    </p>
                                 </div>
-                            </article>
-                            <article class="row blog_item">
-                               <div class="col-md-3">
-                                   <div class="blog_info text-right">
-                                        <div class="post_tag">
-                                            <a href="#">Food,</a>
-                                            <a href="#">Technology,</a>
-                                            <a href="#">Politics,</a>
-                                            <a href="#">Lifestyle</a>
-                                        </div>
-                                        <ul class="blog_meta list_style">
-                                            <li><a href="#">Mark wiens<i class="lnr lnr-user"></i></a></li>
-                                            <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                            <li><a href="#">1.2M Views<i class="lnr lnr-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                                <div class="col-md-9">
-                                    <div class="blog_post">
-                                        <img src="image/blog/main-blog/m-blog-5.jpg" alt="">
-                                        <div class="blog_details">
-                                            <a href="#"><h2>Blog 5</h2></a>
-                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                            <a href="#" class="view_btn button_hover">View More</a>
-                                        </div>
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
                                 </div>
-                            </article>
-                            <article class="row blog_item">
-                               <div class="col-md-3">
-                                   <div class="blog_info text-right">
-                                        <div class="post_tag">
-                                            <a href="#">Food,</a>
-                                            <a href="#">Technology,</a>
-                                            <a href="#">Politics,</a>
-                                            <a href="#">Lifestyle</a>
-                                        </div>
-                                        <ul class="blog_meta list_style">
-                                            <li><a href="#">Mark wiens<i class="lnr lnr-user"></i></a></li>
-                                            <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                            <li><a href="#">1.2M Views<i class="lnr lnr-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                                <div class="col-md-9">
-                                    <div class="blog_post">
-                                        <img src="image/blog/main-blog/m-blog-5.jpg" alt="">
-                                        <div class="blog_details">
-                                            <a href="#"><h2>Blog 6</h2></a>
-                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                            <a href="#" class="view_btn button_hover">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <nav class="blog-pagination justify-content-center d-flex">
-		                        <ul class="pagination">
-		                            <li class="page-item">
-		                                <a href="#" class="page-link" aria-label="Previous">
-		                                    <span aria-hidden="true">
-		                                        <span class="lnr lnr-chevron-left"></span>
-		                                    </span>
-		                                </a>
-		                            </li>
-		                            <li class="page-item"><a href="#" class="page-link">01</a></li>
-		                            <li class="page-item active"><a href="#" class="page-link">02</a></li>
-		                            <li class="page-item"><a href="#" class="page-link">03</a></li>
-		                            <li class="page-item"><a href="#" class="page-link">04</a></li>
-		                            <li class="page-item"><a href="#" class="page-link">09</a></li>
-		                            <li class="page-item">
-		                                <a href="#" class="page-link" aria-label="Next">
-		                                    <span aria-hidden="true">
-		                                        <span class="lnr lnr-chevron-right"></span>
-		                                    </span>
-		                                </a>
-		                            </li>
-		                        </ul>
-		                    </nav>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog_right_sidebar">
-                            <aside class="single_sidebar_widget search_widget">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search Posts">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
-                                    </span>
-                                </div><!-- /input-group -->
-                                <div class="br"></div>
-                            </aside>
-                            <aside class="single_sidebar_widget author_widget">
-                                <img class="author_img rounded-circle" src="image/blog/author.png" alt="">
-                                <h4>Charlie Barber</h4>
-                                <p>Senior blog writer</p>
-                                <div class="social_icon">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-github"></i></a>
-                                    <a href="#"><i class="fa fa-behance"></i></a>
-                                </div>
-                                <p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.</p>
-                                <div class="br"></div>
-                            </aside>
-                            <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title">Popular Posts</h3>
-                                <div class="media post_item">
-                                    <img src="image/blog/post1.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html"><h3>Space The Final Frontier</h3></a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="image/blog/post2.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html"><h3>The Amazing Hubble</h3></a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="image/blog/post3.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html"><h3>Astronomy Or Astrology</h3></a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="image/blog/post4.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html"><h3>Asteroids telescope</h3></a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="br"></div>
-                            </aside>
-                            <aside class="single_sidebar_widget ads_widget">
-                                <a href="#"><img class="img-fluid" src="image/blog/add.jpg" alt=""></a>
-                                <div class="br"></div>
-                            </aside>
-                            <aside class="single_sidebar_widget post_category_widget">
-                                <h4 class="widget_title">Post Catgories</h4>
-                                <ul class="list_style cat-list">
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p>Technology</p>
-                                            <p>37</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p>Lifestyle</p>
-                                            <p>24</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p>Fashion</p>
-                                            <p>59</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p>Art</p>
-                                            <p>29</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p>Food</p>
-                                            <p>15</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p>Architecture</p>
-                                            <p>09</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex justify-content-between">
-                                            <p>Adventure</p>
-                                            <p>44</p>
-                                        </a>
-                                    </li>															
-                                </ul>
-                                <div class="br"></div>
-                            </aside>
-                            <aside class="single-sidebar-widget newsletter_widget">
-                                <h4 class="widget_title">Newsletter</h4>
-                                <p>
-                                Here, I focus on a range of items and features that we use in life without
-                                giving them a second thought.
-                                </p>
-                                <div class="form-group d-flex flex-row">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                        </div>
-                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
-                                    </div>
-                                    <a href="#" class="bbtns">Subcribe</a>
-                                </div>	
-                                <p class="text-bottom">You can unsubscribe at any time</p>	
-                                <div class="br"></div>							
-                            </aside>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="~/img/blogs/festival.jpeg"
+                         alt="Preview">
+                </figure>
+                <div class="article-preview">
+                    <h2>Seasonal Events and Festivals</h2>
+                    <p>
+                        Grand Hotel is nestled in a charming locale that thrives with cultural vibrancy and community spirit. Throughout the year, this region hosts a
+                        myriad of seasonal events and festivals, each offering a unique glimpse into local traditions, arts, and cuisine.
+                        <a href="#" class="read-more" title="Read More" data-bs-toggle="modal" data-bs-target="#eventsModal">
+                            Read more
+                        </a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="eventsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="eventsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="eventsModalLabel">Events</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Spring Awakening: Bloom Festival
+                                    </h5>
+                                    <p>
+                                        Date: Late Sept - Early Nov
+                                    </p>
+                                    <p>
+                                        As winter fades and flowers begin to bloom, the annual Bloom Festival marks the onset of spring with a riot of colors and fragrances. Central Park transforms into a floral wonderland,
+                                        showcasing elaborate flower arrangements, garden tours, and horticultural workshops. Visitors can indulge in local delicacies from food stalls, enjoy live music, and participate in
+                                        family-friendly activities like flower crown making and botanical art exhibitions
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Summer Extravaganza: Summer Solstice Celebration
+                                    </h5>
+                                    <p>
+                                        Date: Late Oct - Early Feb
+                                    </p>
+                                    <p>
+                                        The Summer Solstice Celebration is a highlight of the summer season, drawing crowds to the Beachfront Promenade to celebrate the longest day of the year. The event features beach games,
+                                        sandcastle competitions, and water sports. As the sun sets, the festivities continue with bonfires, fireworks, and live performances by local bands. This celebration is perfect for those
+                                        looking to enjoy the coastal beauty and vibrant community spirit
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Winter Wonderland: Winter Lights Festival
+                                    </h5>
+                                    <p>
+                                        Date: Late May - Early July
+                                    </p>
+                                    <p>
+                                        As the holiday season approaches, Old Town Square is transformed into a magical winter wonderland for the Winter Lights Festival. The square is adorned with twinkling lights, and a
+                                        towering Christmas tree takes center stage. Visitors can browse through a traditional holiday market, enjoy ice skating, and warm up with hot cocoa and mulled wine. The festival also
+                                        includes carol singing, a visit from Santa Claus, and a New Year's Eve fireworks display that lights up the night sky
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="~/img/blogs/arts.jpeg"
+                         alt="Preview">
+                </figure>
+                <div class="article-preview">
+                    <h2>Exploring Arts and Culture</h2>
+                    <p>
+                        Grand Hotel is also perfectly situated for art and culture enthusiasts seeking to immerse themselves in the vibrant and diverse cultural scene of the area.
+                        From world-class museums and art galleries to historical landmarks and performing arts venues, there is no shortage of opportunities to experience the
+                        richness of local and international culture
+                        <a href="#" class="read-more" title="Read More" data-bs-toggle="modal" data-bs-target="#artsModal">
+                            Read more
+                        </a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="artsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="artsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="artsModalLabel">Arts and Culture</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Art Collections: Transforming Spaces into Galleries
+                                    </h5>
+                                    <p>
+                                        One of the most striking ways luxury hotels incorporate arts and culture is through their impressive art collections. These hotels often collaborate with renowned artists and
+                                        galleries to curate collections that adorn their lobbies, corridors, and guest rooms. The art pieces range from classical paintings and contemporary sculptures to avant-garde
+                                        installations and local artisan crafts, creating an ambiance that transcends mere decoration
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Architectural Marvels: Designing with Artistic Flair
+                                    </h5>
+                                    <p>
+                                        The architecture of luxury hotels often serves as a canvas for artistic expression. From historic buildings restored to their former glory to modern structures designed by visionary
+                                        architects, the architecture itself becomes a cultural attraction. These buildings not only reflect the artistic
+                                        trends of their time but also tell stories of the regions they inhabit
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Culinary Artistry: The Fusion of Taste and Tradition
+                                    </h5>
+                                    <p>
+                                        The culinary offerings at luxury hotels are often masterpieces in their own right, blending traditional flavors with innovative techniques to create a sensory journey. Renowned
+                                        chefs curate menus that not only delight the palate but also tell a story of cultural heritage and culinary evolution.
+
+                                        The Mandarin Oriental in Bangkok exemplifies this with its world-class dining experiences that celebrate Thai cuisine. The hotel's signature restaurant, Sala Rim Naam, offers a
+                                        traditional Thai dining experience accompanied by classical dance performances, providing guests with a holistic cultural immersion. Similarly, the Belmond Copacabana Palace
+                                        in Rio de Janeiro showcases Brazilian gastronomy, highlighting local ingredients and culinary traditions in a luxurious setting
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="~/img/blogs/holidays.jpeg"
+                         alt="Preview">
+                </figure>
+                <div class="article-preview">
+                    <h2>Celebrating Holidays</h2>
+                    <p>
+                        The Grand Hotel is a place where luxury meets tradition, and no time of year showcases this better than the holiday season. Whether it’s the sparkle 
+                        of Christmas lights, the warmth of Thanksgiving gatherings, or the joy of a New Year’s Eve countdown, celebrating holidays at the Grand Hotel is an 
+                        experience like no other
+                        <a href="#" class="read-more" title="Read More" data-bs-toggle="modal" data-bs-target="#holidayModal">
+                            Read more
+                        </a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="holidayModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="holidayModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="holidayModalLabel">Holidays</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Magical Decor
+                                    </h5>
+                                    <p>
+                                        From the moment you step into the Grand Hotel during the Christmas season, you are greeted by a winter wonderland. The lobby is adorned 
+                                        with a towering Christmas tree, elegantly decorated with twinkling lights, shiny ornaments, and garlands. The scent of pine and cinnamon 
+                                        fills the air, enhancing the festive atmosphere
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Festive Activities
+                                    </h5>
+                                    <p>
+                                        Gingerbread House Workshop: Perfect for families, this workshop allows guests to create their own gingerbread masterpieces.
+                                        <br />
+                                        Holiday Concerts: Enjoy live performances of classic Christmas carols and festive music by local choirs and musicians.
+                                        <br />
+                                        Santa’s Visit: Santa Claus himself makes an appearance, delighting children and adults alike with the chance for a photo and a chat.
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Gala Celebrations
+                                    </h5>
+                                    <p>
+                                        Elegant Dinner: Start the evening with a gourmet dinner featuring a curated menu of exquisite dishes and fine wines
+                                        <br />
+                                        Live Music and Dancing: Dance the night away with live bands or DJs playing a mix of classic and contemporary tunes
+                                        <br />
+                                        Champagne Toast: As the clock strikes midnight, join other guests in a champagne toast to welcome the New Year
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="~/img/blogs/nature.jpeg"
+                         alt="Preview">
+                </figure>
+                <div class="article-preview">
+                    <h2>Immersive Nature Exploration</h2>
+                    <p>
+                        Grand Hotel stands as a gateway to an enchanting world of natural beauty and wilderness. While the allure of luxury and comfort within the hotel is undeniable, stepping outside 
+                        its elegant confines unveils a realm of breathtaking landscapes, diverse ecosystems, and immersive outdoor experiences waiting to be explored
+                        <a href="#" class="read-more" title="Read More" data-bs-toggle="modal" data-bs-target="#natureModal">
+                            Read more
+                        </a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="natureModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="natureModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="natureModalLabel">Nature</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Exploring the Grounds
+                                    </h5>
+                                    <p>
+                                        The grounds surrounding the Grand Hotel are not just manicured lawns and flower gardens; they serve as a transition zone between 
+                                        the sophistication of the hotel and the raw beauty of nature. Take a leisurely stroll through winding paths shaded by towering trees, 
+                                        or meander through lush gardens bursting with vibrant blooms
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Water Adventures
+                                    </h5>
+                                    <p>
+                                        The Grand Hotel is ideally situated near a myriad of waterways, providing ample opportunities for aquatic adventures. Spend a day kayaking 
+                                        along tranquil rivers or casting a line in pristine lakes teeming with fish. Alternatively, for those seeking a more leisurely experience, 
+                                        pack a picnic and head to a secluded spot along the water's edge, where you can relax and soak up the serenity of your surroundings
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Conservation and Sustainability
+                                    </h5>
+                                    <p>
+                                        As stewards of the environment, the Grand Hotel is committed to preserving the natural beauty that surrounds it for future generations to enjoy. 
+                                        Through sustainable practices such as eco-friendly landscaping, energy conservation measures, and community outreach initiatives, the hotel 
+                                        strives to minimize its environmental footprint while maximizing the guest experience
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="~/img/blogs/culinary.jpeg"
+                         alt="Preview">
+                </figure>
+                <div class="article-preview">
+                    <h2>Exploring Culinary Journeys: A Gastronomic Adventure</h2>
+                    <p>
+                        Grand Hotel stands as a beacon of luxury, elegance, and unparalleled hospitality. Beyond its opulent architecture and lavish amenities lies a culinary experience 
+                        like no other. "Local Flavors, Global Influences" is more than just a tagline; it's a philosophy that permeates every aspect of the hotel's dining experience
+                        <a href="#" class="read-more" title="Read More" data-bs-toggle="modal" data-bs-target="#culinaryModal">
+                            Read more
+                        </a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="culinaryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="culinaryModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="culinaryModalLabel">Culinary Journey</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Embracing Local Ingredients
+                                    </h5>
+                                    <p>
+                                        At Grand Hotel, the culinary team takes great pride in sourcing the finest local ingredients, paying homage to the rich bounty of the region. 
+                                        From farm-fresh produce to succulent seafood caught just off the coast, each dish is a celebration of the land and sea. Guests can indulge in 
+                                        seasonal delights, with menus that change to reflect the flavors of the moment
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Elevating Tradition with a Modern Twist
+                                    </h5>
+                                    <p>
+                                        While honoring tradition is paramount, the chefs at Grand Hotel are not afraid to push the boundaries and experiment with innovative techniques 
+                                        and flavors. Drawing inspiration from global culinary trends, they infuse classic dishes with contemporary flair, creating a dining experience 
+                                        that is both timeless and cutting-edge. Picture a classic French dish reimagined with Asian spices or a beloved comfort food given a gourmet 
+                                        makeover
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        A Culinary Journey Around the World
+                                    </h5>
+                                    <p>
+                                        At Grand Hotel, the world is your oyster, quite literally. From Italian pasta to Japanese sushi, guests can embark on a culinary journey around 
+                                        the globe without ever leaving the comfort of the hotel. The diverse array of dining options ensures that there is something to satisfy every 
+                                        craving and palate
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+

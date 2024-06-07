@@ -345,6 +345,30 @@
       "PackagePath": "staticwebassets\\img\\bg-img\\hero-3.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\arts.jpeg",
+      "PackagePath": "staticwebassets\\img\\blogs\\arts.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\culinary.jpeg",
+      "PackagePath": "staticwebassets\\img\\blogs\\culinary.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\festival.jpeg",
+      "PackagePath": "staticwebassets\\img\\blogs\\festival.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\holidays.jpeg",
+      "PackagePath": "staticwebassets\\img\\blogs\\holidays.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\hotel.jpeg",
+      "PackagePath": "staticwebassets\\img\\blogs\\hotel.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\nature.jpeg",
+      "PackagePath": "staticwebassets\\img\\blogs\\nature.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\cinema\\cinema_hero.jpeg",
       "PackagePath": "staticwebassets\\img\\cinema\\cinema_hero.jpeg"
     },
