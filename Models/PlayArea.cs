@@ -6,9 +6,11 @@ namespace HotelManagement.Models
     {
         [Key]
         public int PlayAreaID { get; set; }
+        [Display(Name = "Guardian Name")]
         public string GuardianName { get; set; }
+        [Display(Name = "Date")]
         public DateTime BookingTime { get; set; }
-        public int DurationInHours { get; set; }
+        [Display(Name = "Number of Children")]
         public int NumberOfChildren { get; set; }
         public bool Confirmed { get; set; }
     }
