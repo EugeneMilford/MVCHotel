@@ -78,6 +78,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Kids/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Kids/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Kids/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Kids/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/ASP NET MVC/HotelManagement/Views/Kids/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/ASP NET MVC/HotelManagement/Views/Outdoors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3V0ZG9vcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

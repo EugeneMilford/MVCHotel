@@ -457,6 +457,10 @@
       "PackagePath": "staticwebassets\\img\\home\\suite.jpeg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\kids\\kids_hero.jpg",
+      "PackagePath": "staticwebassets\\img\\kids\\kids_hero.jpg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\Lamb-Kebab.jpg",
       "PackagePath": "staticwebassets\\img\\restaurant\\Lamb-Kebab.jpg"
     },
