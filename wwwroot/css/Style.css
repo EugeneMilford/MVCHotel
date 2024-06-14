@@ -355,6 +355,10 @@ Hero Section
     background-image: url('../img/Outdoors/outdoor_hero.jpeg');
 }
 
+.kids-heading::before {
+    background-image: url('../img/kids/kids_hero.jpg');
+}
+
 /*-------------
 About
 -------------*/

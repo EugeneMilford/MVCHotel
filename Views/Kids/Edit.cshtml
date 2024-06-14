@@ -1,5 +1,65 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model HotelManagement.Models.PlayArea
+
+<!-- Update -->
+<div class="reservation-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading text-center">
+                    <h2>Edit Kids Activity</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <form id="reservation-form" asp-action="Edit" method="post">
+                    <input type="hidden" asp-for="PlayAreaID" />
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>Edit Your Kids<em>Play Activities</em> Through This <em>Form</em></h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="GuardianName" class="form-label">Guardian Name</label>
+                                <input asp-for="GuardianName" class="form-control" autocomplete="on" required />
+                                <span asp-validation-for="GuardianName" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="BookingTime" class="form-label">Booking Time</label>
+                                <input asp-for="BookingTime" type="datetime-local" class="form-control" required />
+                                <span asp-validation-for="BookingTime" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="NumberOfChildren" class="form-label">Number of Children</label>
+                                <input asp-for="NumberOfChildren" type="number" class="form-control" required />
+                                <span asp-validation-for="NumberOfChildren" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label asp-for="Confirmed" class="form-label">Confirmed</label>
+                                <input asp-for="Confirmed" type="checkbox" class="form-check-input" />
+                                <span asp-validation-for="Confirmed" class="text-danger"></span>
+                            </fieldset>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <button type="submit" class="tertiary-button">Edit Kids Activity</button>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <a asp-action="Index" class="secondary-button">Back to Play Area</a>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

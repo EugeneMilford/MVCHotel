@@ -457,8 +457,24 @@
       "PackagePath": "staticwebassets\\img\\home\\suite.jpeg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\kids\\arts.jpeg",
+      "PackagePath": "staticwebassets\\img\\kids\\arts.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\kids\\board.jpg",
+      "PackagePath": "staticwebassets\\img\\kids\\board.jpg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\kids\\kids_hero.jpg",
       "PackagePath": "staticwebassets\\img\\kids\\kids_hero.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\kids\\scavenger.jpeg",
+      "PackagePath": "staticwebassets\\img\\kids\\scavenger.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\kids\\story.jpg",
+      "PackagePath": "staticwebassets\\img\\kids\\story.jpg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\restaurant\\Lamb-Kebab.jpg",

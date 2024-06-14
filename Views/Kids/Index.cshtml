@@ -11,3 +11,296 @@
         </div>
     </div>
 </div>
+
+<!-- Table and Opening Hours -->
+<div class="container section_gap">
+    <div>
+        <h4>Your Bookings</h4>
+    </div>
+    <div class="row">
+        <div class="col-8 section-top-border">
+            <div class="table-responsive bg-white">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">@Html.DisplayNameFor(model => model.GuardianName)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.BookingTime)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.NumberOfChildren)</th>
+                            <th scope="col">@Html.DisplayNameFor(model => model.Confirmed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GuardianName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BookingTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NumberOfChildren)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Confirmed)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.PlayAreaID">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.PlayAreaID">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.PlayAreaID">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <p>
+                <a class="theme-button" asp-action="Create">Add New</a>
+            </p>
+        </div>
+        <div class="col-4">
+            <div class="opening-hours-widget mt-50">
+                <h6>Opening Hours</h6>
+                <ul class="opening-hours">
+                    <li>
+                        <p>Monday</p>
+                        <p>8 AM - 8 PM</p>
+                    </li>
+                    <li>
+                        <p>Tuesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Wednesday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Thursday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Friday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Saturday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                    <li>
+                        <p>Sunday</p>
+                        <p>9 AM - 1 PM</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services Start -->
+<div class="container-fluid bg-light service py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Services</h5>
+            <h1 class="mb-0">Our Services</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Entertainment for All Ages</h5>
+                                <p class="mb-0">
+                                    Whether your child is a toddler or a pre-teen, our play area caters to children of all ages. We've carefully curated activities and amenities to ensure that every child, regardless of age, 
+                                    finds something exciting to do
+                                </p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-globe fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
+                            <div class="service-content text-end">
+                                <h5 class="mb-4">Creating Cherished Memories</h5>
+                                <p class="mb-0">
+                                    At the heart of our kids' play area is the desire to create cherished family memories that will last a lifetime. From laughter-filled moments to exciting discoveries, we strive to make every 
+                                    visit to our play area a special experience for both children and parents alike
+                                </p>
+                            </div>
+                            <div class="service-icon p-4">
+                                <i class="fa fa-hotel fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-globe fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Kid-Friendly Wonderland</h5>
+                                <p class="mb-0">
+                                    Designed with imagination and safety in mind, our kid-friendly wonderland ensures that children have a blast while parents can relax knowing their little ones are entertained 
+                                    in a secure environment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                            <div class="service-icon p-4">
+                                <i class="fa fa-hotel fa-4x text-primary"></i>
+                            </div>
+                            <div class="service-content">
+                                <h5 class="mb-4">Supervised Fun</h5>
+                                <p class="mb-0">
+                                    Safety is our top priority, which is why our play area is supervised by attentive staff members trained to ensure a safe and enjoyable experience for all children. Parents can 
+                                    rest assured knowing that their kids are under the watchful eye of our trained professionals
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Play Area Benefits -->
+<section>
+    <div class="section-top-border">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Play Area</h5>
+            <h1 class="mb-0">Play Area Benefits</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="single-defination">
+                    <h4 class="mb-20">Story Time</h4>
+                    <p>
+                        As the sun sets and the day's adventures draw to a close, the kids' play area transforms into a cozy retreat where families gather for evening storytelling sessions and movie nights under the 
+                        stars. With plush cushions and bean bags scattered across the floor, children snuggle up with their newfound friends
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-defination">
+                    <h4 class="mb-20">Scavenger Hunts</h4>
+                    <p>
+                        Beyond the confines of the play area, thrilling scavenger hunts beckon adventurous souls to embark on captivating journeys throughout the resort grounds. Armed with maps and clues, young 
+                        explorers set out on exhilarating quests, uncovering hidden treasures
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-defination">
+                    <h4 class="mb-20">Finger Painting For All</h4>
+                    <p>
+                        At the heart of the play area, a dedicated arts and crafts corner awaits, where young Picasso's and budding artisans can unleash their creativity onto blank canvases. With a plethora 
+                        of supplies at their fingertips – from vibrant paints and brushes to an assortment of crafting materials
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Special Activities -->
+<div class="container-fluid blog py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Activities</h5>
+            <h1 class="mb-4">Special Activities</h1>
+            <p class="mb-0">
+                From colorful arts and crafts workshops to thrilling scavenger hunts, there's something for 
+                every child to enjoy
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <div class="blog-img-inner">
+                            <img class="img-fluid w-100 rounded-top" src="~/img/kids/board.jpg" alt="Image">
+                            <div class="blog-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content border border-top-0 rounded-bottom p-4">
+                        <a href="#" class="h4">Board Games and Puzzles</a>
+                        <p class="my-3">
+                            Set up a board game corner with a variety of board games suitable for different age groups
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <div class="blog-img-inner">
+                            <img class="img-fluid w-100 rounded-top" src="~/img/kids/story.jpg" alt="Image">
+                            <div class="blog-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content border border-top-0 rounded-bottom p-4">
+                        <a href="#" class="h4">Storytelling Sessions</a>
+                        <p class="my-3">
+                            Invite a storyteller or hotel staff member to entertain kids with engaging stories, fairy tales, or 
+                            interactive storytelling sessions
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <div class="blog-img-inner">
+                            <img class="img-fluid w-100 rounded-top" src="~/img/kids/scavenger.jpeg" alt="Image">
+                            <div class="blog-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content border border-top-0 rounded-bottom p-4">
+                        <a href="#" class="h4">Scavenger Hunts</a>
+                        <p class="my-3">
+                            Organize themed scavenger hunts around the hotel premises, where kids can search for hidden clues or objects
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <div class="blog-img-inner">
+                            <img class="img-fluid w-100 rounded-top" src="~/img/kids/arts.jpeg" alt="Image">
+                            <div class="blog-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content border border-top-0 rounded-bottom p-4">
+                        <a href="#" class="h4">Arts and Crafts Workshops</a>
+                        <p class="my-3">
+                            Set up a designated area with tables, chairs, and a variety of art supplies where kids can unleash their 
+                            creativity
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
