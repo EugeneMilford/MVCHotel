@@ -11,62 +11,31 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <!-- Header Area -->
-        <header class="header_area" id="header">
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-12 h-100">
-                    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #5fc9d3;">
-                        <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
-                        <!-- Nav -->
-                        <div class="collapse navbar-collapse" id="HotelNav">
-                            <ul class="navbar-nav" id="HotelMenu">
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" asp-area="" asp-controller="Hotels" asp-action="Index">Hotels</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Rooms" asp-action="Index">Rooms</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Employees" asp-action="Index">Hotel Staff</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Restaurants" asp-action="Index">Restaurant</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Cinemas" asp-action="Index">Cinema</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Retreat" asp-action="Index">Spa</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Outdoors" asp-action="Index">Outdoor Activities</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Kids" asp-action="Index">Kids Play Area</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a class="nav-link" asp-area="" asp-controller="Blog" asp-action="Index">Blogs</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="logout.html">Logout</a>
-                                </li>
-                            </ul>                            
-                            </div>
-                        </nav>
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="display-6 text-dark"><i class="fas fa-swimmer text-primary me-3"></i>Hotel</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Restaurants" asp-action="Index">Restaurant</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Cinemas" asp-action="Index">Cinema</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Retreat" asp-action="Index">Spa</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Outdoors" asp-action="Index">Outdoor Activities</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Kids" asp-action="Index">Kids Play Area</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Blog" asp-action="Index">Blogs</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
                     </div>
                 </div>
-            </div>
-        </header>
+            </nav>
+        </div>
 
-        @RenderBody()
+    @RenderBody()
 
         <!-- Footer -->
         <footer class="footer-area section_gap" style="background-color: #262d79; padding: 20px;">

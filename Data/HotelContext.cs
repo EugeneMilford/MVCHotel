@@ -16,17 +16,11 @@ namespace HotelManagement.Data
 
         public DbSet<HotelManagement.Models.Hotel> Hotel { get; set; } = default!;
 
-        public DbSet<HotelManagement.Models.Room> Room { get; set; }
-
         public DbSet<HotelManagement.Models.Employee> Employee { get; set; }
-
-        public DbSet<HotelManagement.Models.Invoice> Invoice { get; set; }
 
         public DbSet<HotelManagement.Models.Activities> Activities { get; set; } 
 
         public DbSet<HotelManagement.Models.Cinema> Cinema { get; set; }
-      
-        public DbSet<HotelManagement.Models.Fitness> Fitness { get; set; }
 
         public DbSet<HotelManagement.Models.Restaurant> Restaurant { get; set; }
 
