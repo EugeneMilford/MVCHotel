@@ -1,12 +1,14 @@
 ﻿@model IEnumerable<HotelManagement.Models.Restaurant>
 
 <!-- Hero Section -->
-<div class="page-heading restaurant-heading">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>Our Restaurant</h4>
-                <h2>Delight your senses with a culinary journey</h2>
+<div class="carousel-header">
+    <div class="hero-content" style="position:relative; min-height: 80vh;">
+        <img src="~/img/restaurant/res_hero.jpeg" class="img-fluid" alt="Hotel Restaurant" style="width:100%; height:100%; object-fit:cover;">
+        <div class="carousel-caption" style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; text-align:center; background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6));">
+            <div class="text-center p-4" style="max-width: 900px;">
+                <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Our Restaurant</h4>
+                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Savor Exquisite Flavors</h1>
+                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Indulge in a culinary experience that delights your palate.</p>
             </div>
         </div>
     </div>
@@ -450,3 +452,76 @@
         </div>
     </div>
 </section>
+
+<!-- Gallery Start -->
+<div class="container-fluid gallery pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5">
+            <h4 class="text-primary">Our Dining Moments</h4>
+            <h1 class="display-5 mb-4">Memorable Experiences at Our Restaurant</h1>
+            <p class="mb-0">Join us as we celebrate the joy of dining! Our gallery captures the laughter, enjoyment, and unforgettable moments shared by our guests.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/restaurant/res01.jpeg" class="img-fluid" alt="Happy Family Dining" />
+                    <a href="~/img/restaurant/res01.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/restaurant/res02.jpeg" class="img-fluid" alt="Friends Enjoying a Meal" />
+                    <a href="~/img/restaurant/res02.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/restaurant/res03.jpeg" class="img-fluid" alt="Couples Dining Together" />
+                    <a href="~/img/restaurant/res03.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/restaurant/res04.jpeg" class="img-fluid" alt="Cheerful Guests at the Restaurant" />
+                    <a href="~/img/restaurant/res04.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/restaurant/res05.jpeg" class="img-fluid" alt="Special Events at Our Restaurant" />
+                    <a href="~/img/restaurant/res05.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/restaurant/res06.jpeg" class="img-fluid" alt="Guests Enjoying Live Music" />
+                    <a href="~/img/restaurant/res06.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

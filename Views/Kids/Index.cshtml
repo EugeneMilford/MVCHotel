@@ -1,12 +1,14 @@
 ﻿@model IEnumerable<HotelManagement.Models.PlayArea>
 
 <!-- Hero Section -->
-<div class="page-heading kids-heading">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>Outdoor Activities</h4>
-                <h2>Fun in the sun for the little ones</h2>
+<div class="carousel-header">
+    <div class="hero-content" style="position:relative; min-height: 80vh;">
+        <img src="~/img/kids/kids_hero.jpeg" class="img-fluid" alt="Hotel Kids Play Area" style="width:100%; height:100%; object-fit:cover;">
+        <div class="carousel-caption" style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; text-align:center; background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6));">
+            <div class="text-center p-4" style="max-width: 900px;">
+                <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Kids' Play Area</h4>
+                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Fun Awaits for Your Little Ones</h1>
+                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Let them unleash their creativity and energy in a safe environment.</p>
             </div>
         </div>
     </div>
@@ -176,37 +178,39 @@
 
 <!-- Play Area Benefits -->
 <section>
-    <div class="section-top-border">
-        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-            <h5 class="section-title px-3">Play Area</h5>
-            <h1 class="mb-0">Play Area Benefits</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="single-defination">
-                    <h4 class="mb-20">Story Time</h4>
-                    <p>
-                        As the sun sets and the day's adventures draw to a close, the kids' play area transforms into a cozy retreat where families gather for evening storytelling sessions and movie nights under the 
-                        stars. With plush cushions and bean bags scattered across the floor, children snuggle up with their newfound friends
-                    </p>
-                </div>
+    <div class="container">
+        <div class="section-top-border">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Play Area</h5>
+                <h1 class="mb-0">Play Area Benefits</h1>
             </div>
-            <div class="col-md-4">
-                <div class="single-defination">
-                    <h4 class="mb-20">Scavenger Hunts</h4>
-                    <p>
-                        Beyond the confines of the play area, thrilling scavenger hunts beckon adventurous souls to embark on captivating journeys throughout the resort grounds. Armed with maps and clues, young 
-                        explorers set out on exhilarating quests, uncovering hidden treasures
-                    </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-defination">
+                        <h4 class="mb-20">Story Time</h4>
+                        <p>
+                            As the sun sets and the day's adventures draw to a close, the kids' play area transforms into a cozy retreat where families gather for evening storytelling sessions and movie nights under the
+                            stars. With plush cushions and bean bags scattered across the floor, children snuggle up with their newfound friends
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-defination">
-                    <h4 class="mb-20">Finger Painting For All</h4>
-                    <p>
-                        At the heart of the play area, a dedicated arts and crafts corner awaits, where young Picasso's and budding artisans can unleash their creativity onto blank canvases. With a plethora 
-                        of supplies at their fingertips – from vibrant paints and brushes to an assortment of crafting materials
-                    </p>
+                <div class="col-md-4">
+                    <div class="single-defination">
+                        <h4 class="mb-20">Scavenger Hunts</h4>
+                        <p>
+                            Beyond the confines of the play area, thrilling scavenger hunts beckon adventurous souls to embark on captivating journeys throughout the resort grounds. Armed with maps and clues, young
+                            explorers set out on exhilarating quests, uncovering hidden treasures
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-defination">
+                        <h4 class="mb-20">Finger Painting For All</h4>
+                        <p>
+                            At the heart of the play area, a dedicated arts and crafts corner awaits, where young Picasso's and budding artisans can unleash their creativity onto blank canvases. With a plethora
+                            of supplies at their fingertips – from vibrant paints and brushes to an assortment of crafting materials
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -303,4 +307,75 @@
     </div>
 </div>
 
-
+<!-- Hotel Kids Play Area Gallery Start -->
+<div class="container-fluid gallery pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5">
+            <h4 class="text-primary">Our Kids Play Area</h4>
+            <h1 class="display-5 mb-4">Where Fun Meets Adventure</h1>
+            <p class="mb-0">Discover our vibrant kids' play area, designed for endless fun and creativity in a safe environment</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/kids/play01.jpeg" class="img-fluid" alt="Colorful Play Structures" />
+                    <a href="~/img/kids/play01.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/kids/play02.jpeg" class="img-fluid" alt="Children Playing in the Play Area" />
+                    <a href="~/img/kids/play02.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/kids/play03.jpeg" class="img-fluid" alt="Creative Arts and Crafts Station" />
+                    <a href="~/img/kids/play03.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/kids/play04.jpeg" class="img-fluid" alt="Fun Ball Pit" />
+                    <a href="~/img/kids/play04.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/kids/play05.jpeg" class="img-fluid" alt="Interactive Play Stations" />
+                    <a href="~/img/kids/play05.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item position-relative overflow-hidden rounded">
+                    <img src="~/img/kids/play06.jpeg" class="img-fluid" alt="Group of Kids Having Fun" />
+                    <a href="~/img/kids/play06.jpeg" class="gallery-link" data-lightbox="gallery">
+                        <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

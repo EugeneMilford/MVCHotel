@@ -1430,3 +1430,74 @@ Pricing
     top: -1.875rem;
 }
 
+/*** testimonial Start ***/
+.testimonial .owl-carousel.testimonial-carousel {
+    position: relative;
+}
+
+    .testimonial .owl-carousel.testimonial-carousel .testimonial-item .testimonial-content {
+        position: relative;
+        border-radius: 10px;
+        background: var(--bs-light);
+    }
+
+        .testimonial .owl-carousel.testimonial-carousel .testimonial-item .testimonial-content::after {
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 45px;
+            bottom: -20px;
+            left: 30px;
+            transform: rotate(45deg);
+            background: var(--bs-light);
+            z-index: -1;
+        }
+
+    .testimonial .owl-carousel.testimonial-carousel .owl-nav {
+        position: absolute;
+        top: -60px;
+        right: 0;
+        display: flex;
+        font-size: 40px;
+        color: var(--bs-primary);
+    }
+
+        .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev {
+            margin-right: 40px;
+        }
+
+        .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev,
+        .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next {
+            transition: 0.5s;
+        }
+
+            .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev:hover,
+            .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next:hover {
+                color: var(--bs-secondary);
+            }
+/*** testimonial end ***/
+
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.gallery-overlay i {
+    color: #fff; /* Change icon color */
+    font-size: 2rem; /* Adjust icon size */
+}
