@@ -9,13 +9,14 @@
         <link rel="stylesheet" href="~/css/Style.css">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
         <!-- Navbar & Hero Start -->
         <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="display-6 text-dark"><i class="fas fa-swimmer text-primary me-3"></i>Hotel</h1>
+                <h1 class="display-6 text-dark"><i class="fas fa-hotel text-primary me-3"></i>Hotel</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -23,6 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Employees" asp-action="Index">Employees</a>
                         <a class="nav-item nav-link" asp-area="" asp-controller="Restaurants" asp-action="Index">Restaurant</a>
                         <a class="nav-item nav-link" asp-area="" asp-controller="Cinemas" asp-action="Index">Cinema</a>
                         <a class="nav-item nav-link" asp-area="" asp-controller="Retreat" asp-action="Index">Spa</a>
@@ -37,7 +39,6 @@
 
     @RenderBody()
 
-    <!-- Footer -->
     <!-- Footer Section -->
     <footer class="footer text-center text-lg-start">
         <div class="container">
@@ -74,7 +75,7 @@
         </div>
 
         <div class="text-center py-3">
-            <p>&copy; 2023 Your Hotel Name. All Rights Reserved.</p>
+            <p>&copy; 2024 Hotel Management. All Rights Reserved.</p>
         </div>
     </footer>
 

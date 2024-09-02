@@ -373,6 +373,10 @@
       "PackagePath": "staticwebassets\\img\\blogs\\arts.jpeg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\blog_breadcrumb.jpeg",
+      "PackagePath": "staticwebassets\\img\\blogs\\blog_breadcrumb.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\blogs\\culinary.jpeg",
       "PackagePath": "staticwebassets\\img\\blogs\\culinary.jpeg"
     },
@@ -437,6 +441,10 @@
       "PackagePath": "staticwebassets\\img\\cinema\\movie4.jpg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\contact\\contact_breadcrumb.jpeg",
+      "PackagePath": "staticwebassets\\img\\contact\\contact_breadcrumb.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\about.jpg",
       "PackagePath": "staticwebassets\\img\\home\\about.jpg"
     },
@@ -467,6 +475,10 @@
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\hotel_about_2.jpeg",
       "PackagePath": "staticwebassets\\img\\home\\hotel_about_2.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\hotel_subscribe.jpeg",
+      "PackagePath": "staticwebassets\\img\\home\\hotel_subscribe.jpeg"
     },
     {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\home\\kids-offer.jpeg",

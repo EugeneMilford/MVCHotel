@@ -17,7 +17,7 @@ namespace HotelManagement.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -78,6 +78,34 @@ namespace HotelManagement.Migrations
                     b.ToTable("Cinema");
                 });
 
+            modelBuilder.Entity("HotelManagement.Models.Contact", b =>
+                {
+                    b.Property<int>("ContactId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContactId"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("ContactId");
+
+                    b.ToTable("ContactMessages");
+                });
+
             modelBuilder.Entity("HotelManagement.Models.Employee", b =>
                 {
                     b.Property<int>("EmployeeId")
@@ -104,28 +132,6 @@ namespace HotelManagement.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employee");
-                });
-
-            modelBuilder.Entity("HotelManagement.Models.Fitness", b =>
-                {
-                    b.Property<int>("FitnessID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FitnessID"));
-
-                    b.Property<DateTime>("BookingTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("Confirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("MemberName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("FitnessID");
-
-                    b.ToTable("Fitness");
                 });
 
             modelBuilder.Entity("HotelManagement.Models.Hotel", b =>
@@ -157,31 +163,6 @@ namespace HotelManagement.Migrations
                     b.HasKey("HotelId");
 
                     b.ToTable("Hotel");
-                });
-
-            modelBuilder.Entity("HotelManagement.Models.Invoice", b =>
-                {
-                    b.Property<int>("InvoiceId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InvoiceId"));
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("HotelPackage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("InvoicePayer")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("IssueDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("InvoiceId");
-
-                    b.ToTable("Invoice");
                 });
 
             modelBuilder.Entity("HotelManagement.Models.PlayArea", b =>
@@ -232,40 +213,6 @@ namespace HotelManagement.Migrations
                     b.HasKey("RestaurantID");
 
                     b.ToTable("Restaurant");
-                });
-
-            modelBuilder.Entity("HotelManagement.Models.Room", b =>
-                {
-                    b.Property<int>("RoomId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoomId"));
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("HotelPackage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsBooked")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Occupant")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("PricePerNight")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("RoomNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("RoomId");
-
-                    b.ToTable("Room");
                 });
 
             modelBuilder.Entity("HotelManagement.Models.Spa", b =>

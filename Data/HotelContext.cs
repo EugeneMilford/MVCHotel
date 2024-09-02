@@ -14,17 +14,19 @@ namespace HotelManagement.Data
         {
         }
 
-        public DbSet<HotelManagement.Models.Hotel> Hotel { get; set; } = default!;
+        public DbSet<Hotel> Hotel { get; set; }
 
-        public DbSet<HotelManagement.Models.Employee> Employee { get; set; }
+        public DbSet<Employee> Employee { get; set; }
 
-        public DbSet<HotelManagement.Models.Activities> Activities { get; set; } 
+        public DbSet<Activities> Activities { get; set; } 
 
-        public DbSet<HotelManagement.Models.Cinema> Cinema { get; set; }
+        public DbSet<Cinema> Cinema { get; set; }
 
-        public DbSet<HotelManagement.Models.Restaurant> Restaurant { get; set; }
+        public DbSet<Restaurant> Restaurant { get; set; }
 
-        public DbSet<HotelManagement.Models.PlayArea> Kids { get; set; }
-        public DbSet<HotelManagement.Models.Spa> Spabooking { get; set; }
+        public DbSet<PlayArea> Kids { get; set; }
+        public DbSet<Spa> Spabooking { get; set; }
+
+        public DbSet<Contact> ContactMessages { get; set; }
     }
 }
