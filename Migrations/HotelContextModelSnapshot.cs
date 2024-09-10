@@ -131,7 +131,7 @@ namespace HotelManagement.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employee", (string)null);
                 });
 
             modelBuilder.Entity("HotelManagement.Models.Hotel", b =>

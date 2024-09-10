@@ -14,6 +14,7 @@ namespace HotelManagement.Data
         {
         }
 
+
         public DbSet<Hotel> Hotel { get; set; }
 
         public DbSet<Employee> Employee { get; set; }
@@ -28,5 +29,10 @@ namespace HotelManagement.Data
         public DbSet<Spa> Spabooking { get; set; }
 
         public DbSet<Contact> ContactMessages { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Employee>().ToTable("Employee");
+        }
     }
 }

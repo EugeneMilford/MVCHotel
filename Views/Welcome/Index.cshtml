@@ -17,73 +17,73 @@
     <body>
         <div class="welcome-wrapper">
            <!-- ***** Header Area Start ***** -->
-        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
-            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="display-6 text-dark"><i class="fas fa-hotel text-primary me-3"></i>Hotel</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        <a class="nav-item nav-link" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+            <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                    <a href="" class="navbar-brand p-0">
+                        <h1 class="display-6 text-dark"><i class="fas fa-hotel text-primary me-3"></i>Hotel</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto py-0">
+                            <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-item nav-link" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
         
         
-            <!-- ***** Welcome Area Start ***** -->
+            <!-- Welcome Area Start -->
             <section class="welcome-area bg-img bg-overlay">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-10">
                             <div class="hero-content">
-                                <h2>Discover places near you</h2>
-                                <h4>This is the best guide for your vacation journey</h4>
+                                <h2>Experience the Perfect Stay</h2>
+                                <h4>Your ideal getaway is just a few clicks away</h4>
                             </div>
-                            <!-- Hero Search Form -->
-                            <div class="hero-search-form">
-                            <!-- Tabs -->
-                                <div class="nav nav-tabs" id="heroTab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true">Places</a>
-                                </div>
-                                <!-- Tabs Content -->
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-places-tab">
-                                        <h6>What are you looking for?</h6>
-                                        <form action="#" method="get">
-                                            <select class="custom-select">
-                                                <option selected>Your Destinations</option>
-                                                <option value="1">New York</option>
-                                                <option value="2">Latvia</option>
-                                                <option value="3">Dhaka</option>
-                                                <option value="4">Melbourne</option>
-                                                <option value="5">London</option>
-                                            </select>
-                                            <select class="custom-select">
-                                                <option selected>All Catagories</option>
-                                                <option value="1">Catagories 1</option>
-                                                <option value="2">Catagories 2</option>
-                                                <option value="3">Catagories 3</option>
-                                            </select>
-                                            <select class="custom-select">
-                                                <option selected>Price Range</option>
-                                                <option value="1">$100 - $499</option>
-                                                <option value="2">$500 - $999</option>
-                                                <option value="3">$1000 - $4999</option>
-                                            </select>
-                                            <button type="submit" class="welcome-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="hero-search-form">
+                    <div class="nav nav-tabs" id="heroTab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-nights-tab" data-toggle="tab" href="#nav-nights" role="tab" aria-controls="nav-nights" aria-selected="true">Nights</a>
+                    </div>
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-nights" role="tabpanel" aria-labelledby="nav-nights-tab">
+                            <h6>Plan your stay:</h6>
+                            <form action="#" method="get">
+                                <select class="custom-select">
+                                    <option selected>Select Destination</option>
+                                    <option value="1">New York</option>
+                                    <option value="2">Latvia</option>
+                                    <option value="3">Dhaka</option>
+                                    <option value="4">Melbourne</option>
+                                    <option value="5">London</option>
+                                </select>
+                                <select class="custom-select">
+                                    <option selected>Number of Nights</option>
+                                    <option value="1">1 Night</option>
+                                    <option value="2">2 Nights</option>
+                                    <option value="3">3 Nights</option>
+                                    <option value="4">4 Nights</option>
+                                    <option value="5">5 Nights</option>
+                                </select>
+                                <select class="custom-select">
+                                    <option selected>Room Type</option>
+                                    <option value="1">Single Room</option>
+                                    <option value="2">Double Room</option>
+                                    <option value="3">Suite</option>
+                                </select>
+                                <button type="submit" class="secondary-button"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
 
             <!-- Category Area -->
             <section class="category-area">

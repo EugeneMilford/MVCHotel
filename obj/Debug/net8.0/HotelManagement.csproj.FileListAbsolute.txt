@@ -264,3 +264,6 @@ D:\Projects\ASP NET MVC\HotelManagement\bin\Debug\net8.0\Microsoft.Extensions.Fi
 D:\Projects\ASP NET MVC\HotelManagement\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\Projects\ASP NET MVC\HotelManagement\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Projects\ASP NET MVC\HotelManagement\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Projects\ASP NET MVC\HotelManagement\bin\Debug\net8.0\HotelManagement.staticwebassets.endpoints.json
+D:\Projects\ASP NET MVC\HotelManagement\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Projects\ASP NET MVC\HotelManagement\obj\Debug\net8.0\staticwebassets\msbuild.HotelManagement.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

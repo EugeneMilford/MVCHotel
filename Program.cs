@@ -33,12 +33,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// Seed data
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    SeedData.Initialize(services);
-}
+// Removed SeedData code
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

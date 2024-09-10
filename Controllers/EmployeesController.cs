@@ -22,13 +22,13 @@ namespace HotelManagement.Controllers
         // GET: Employees
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Employee.ToListAsync());
+            return View(await _context.Employee.ToListAsync());
         }
 
         // GET: Employees/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Employee == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -50,8 +50,6 @@ namespace HotelManagement.Controllers
         }
 
         // POST: Employees/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EmployeeId,Name,Surname,Age,Title,Address")] Employee employee)
@@ -68,7 +66,7 @@ namespace HotelManagement.Controllers
         // GET: Employees/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Employee == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -82,8 +80,6 @@ namespace HotelManagement.Controllers
         }
 
         // POST: Employees/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("EmployeeId,Name,Surname,Age,Title,Address")] Employee employee)
@@ -119,7 +115,7 @@ namespace HotelManagement.Controllers
         // GET: Employees/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Employee == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -139,23 +135,15 @@ namespace HotelManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Employee == null)
-            {
-                return Problem("Entity set 'HotelContext.Employee'  is null.");
-            }
             var employee = await _context.Employee.FindAsync(id);
-            if (employee != null)
-            {
-                _context.Employee.Remove(employee);
-            }
-            
+            _context.Employee.Remove(employee);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool EmployeeExists(int id)
         {
-          return _context.Employee.Any(e => e.EmployeeId == id);
+            return _context.Employee.Any(e => e.EmployeeId == id);
         }
     }
 }
