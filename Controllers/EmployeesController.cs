@@ -22,7 +22,7 @@ namespace HotelManagement.Controllers
         // GET: Employees
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Employee.ToListAsync());
+            return View(await _context.Staff.ToListAsync());
         }
 
         // GET: Employees/Details/5
@@ -33,7 +33,7 @@ namespace HotelManagement.Controllers
                 return NotFound();
             }
 
-            var employee = await _context.Employee
+            var employee = await _context.Staff
                 .FirstOrDefaultAsync(m => m.EmployeeId == id);
             if (employee == null)
             {
@@ -71,7 +71,7 @@ namespace HotelManagement.Controllers
                 return NotFound();
             }
 
-            var employee = await _context.Employee.FindAsync(id);
+            var employee = await _context.Staff.FindAsync(id);
             if (employee == null)
             {
                 return NotFound();
@@ -120,7 +120,7 @@ namespace HotelManagement.Controllers
                 return NotFound();
             }
 
-            var employee = await _context.Employee
+            var employee = await _context.Staff
                 .FirstOrDefaultAsync(m => m.EmployeeId == id);
             if (employee == null)
             {
@@ -135,15 +135,15 @@ namespace HotelManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var employee = await _context.Employee.FindAsync(id);
-            _context.Employee.Remove(employee);
+            var employee = await _context.Staff.FindAsync(id);
+            _context.Staff.Remove(employee);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool EmployeeExists(int id)
         {
-            return _context.Employee.Any(e => e.EmployeeId == id);
+            return _context.Staff.Any(e => e.EmployeeId == id);
         }
     }
 }

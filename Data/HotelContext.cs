@@ -13,11 +13,9 @@ namespace HotelManagement.Data
             : base(options)
         {
         }
-
-
         public DbSet<Hotel> Hotel { get; set; }
 
-        public DbSet<Employee> Employee { get; set; }
+        public DbSet<Employee> Staff { get; set; }
 
         public DbSet<Activities> Activities { get; set; } 
 
@@ -32,7 +30,7 @@ namespace HotelManagement.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Employee>().ToTable("Employee");
+            modelBuilder.Entity<Employee>().ToTable("Employees");
         }
     }
 }
