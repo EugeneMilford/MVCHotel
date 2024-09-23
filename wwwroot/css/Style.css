@@ -1655,40 +1655,36 @@ Pricing
 }
 
 /*** Single Page Hero Header Start ***/
-.contact-breadcrumb {
+.breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/contact/contact_breadcrumb.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center center no-repeat;
     background-size: cover;
-    padding: 60px 0 60px 0;
+    padding: 60px 0;
     transition: 0.5s;
 }
 
-    .contact-breadcrumb .breadcrumb {
+    .breadcrumb .breadcrumb {
         position: relative;
     }
 
-        .contact-breadcrumb .breadcrumb .breadcrumb-item a {
+        .breadcrumb .breadcrumb .breadcrumb-item a {
             color: var(--bs-white);
         }
+
+/* Specific Images */
+.contact-breadcrumb {
+    background-image: url(~/img/contact/contact_breadcrumb.jpeg);
+}
 
 .blog-breadcrumb {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/blogs/blog_breadcrumb.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 0 60px 0;
-    transition: 0.5s;
+    background-image: url(~/img/blogs/blog_breadcrumb.jpeg);
 }
 
-    .blog-breadcrumb .breadcrumb {
-        position: relative;
-    }
+.login-breadcrumb {
+    background-image: url(~/img/Auth/login.jpeg);
+}
 
-        .blog-breadcrumb .breadcrumb .breadcrumb-item a {
-            color: var(--bs-white);
-        }
+.register-breadcrumb {
+    background-image: url(../img/Auth/register.jpeg);
+}

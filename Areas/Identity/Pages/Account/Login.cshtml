@@ -1,0 +1,160 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid login-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Login</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="../Views/Welcome/Index.cshtml">Welcome</a></li>
+                <li class="breadcrumb-item active text-primary">Login</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Login Start -->
+    <div class="container-fluid py-5" style="background-color: #f1f1f1;">
+        <div class="container py-5">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary pe-3">Hotel Login</h5>
+                    </div>
+                    <h1 class="display-5 mb-4">Welcome Back! Please Log In</h1>
+                    <p class="mb-5">Access your hotel account to manage reservations, view your booking history, and more.</p>
+                    <section>
+                        <form id="account" method="post">
+                            <h2>Login to your account</h2>
+                            <hr />
+                            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                            <div class="form-floating mb-3">
+                                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                <label asp-for="Input.Email" class="form-label">Email</label>
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                                <label asp-for="Input.Password" class="form-label">Password</label>
+                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            </div>
+                            <div class="checkbox mb-3">
+                                <label asp-for="Input.RememberMe" class="form-label">
+                                    <input class="form-check-input" asp-for="Input.RememberMe" />
+                                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                </label>
+                            </div>
+                            <div>
+                                <button id="login-submit" type="submit" class="w-100 theme-button">Log in</button>
+                            </div>
+                            <div>
+                                <p>
+                                    <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                                </p>
+                                <p>
+                                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                                </p>
+                                <p>
+                                    <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                                </p>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary pe-3">Other Login Options</h5>
+                    </div>
+                    <h1 class="display-5 mb-4">Log in with External Services</h1>
+                    <p class="mb-3">You can also use your existing accounts from other services to log in.</p>
+                    <section>
+                        @if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                        {
+                            <div>
+                                <p>
+                                    There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article</a> about setting up this ASP.NET application to support logging in via external services.
+                                </p>
+                            </div>
+                        }
+                        else
+                        {
+                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                <div>
+                                    <p>
+                                        @foreach (var provider in Model.ExternalLogins!)
+                                        {
+                                            <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                        }
+                                    </p>
+                                </div>
+                            </form>
+                        }
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login End -->
+
+    <!-- Footer Section -->
+    <footer class="footer text-center text-lg-start">
+        <div class="container">
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <p>Experience luxury and comfort at our hotel. Our dedicated staff ensures a memorable stay for you and your loved ones.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <h5 class="text-uppercase">Follow Us</h5>
+                        <a href="#" class="me-3 text-reset"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3 text-reset"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3 text-reset"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-reset"><i class="fab fa-youtube"></i></a>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 123 Hotel St, Cape Town<br>
+                        <i class="fas fa-phone"></i> +123 456 7890<br>
+                        <i class="fas fa-envelope"></i> info@hotel.com
+                    </p>
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <a href="#" class="me-3 text-reset"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-3 text-reset"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-3 text-reset"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-reset"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-3">
+            <p>&copy; 2024 Hotel Management. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="~/js/scripts.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>
+

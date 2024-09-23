@@ -17,7 +17,7 @@ builder.Services.AddDbContext<HotelIdentityContext>(options =>
         ?? throw new InvalidOperationException("Connection string 'HotelIdentityContext' not found.")));
 
 // Add Identity services with the default settings
-builder.Services.AddDefaultIdentity<HotelUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<HotelUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<HotelIdentityContext>();
 
 // Add services to the container

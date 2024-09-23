@@ -1,0 +1,34 @@
+[33m2dad0eb[m[33m ([m[1;36mHEAD -> [m[1;32mAuthentication[m[33m)[m Save work
+[33m92a3d4e[m Employees Page Fixed
+[33m7f08b68[m Contact Page Completed
+[33meba3a4e[m Contact Page Added
+[33mb76a604[m HTML Completed
+[33m2c88ee7[m Identity Added
+[33m07884d3[m HTML Completed
+[33mcfd45da[m Kids CRUD Views Added
+[33m3d0e59f[m K ids Controller Added
+[33m344a7ad[m Models Updated
+[33m7784f38[m Blogs Page Completed
+[33m60a6512[m Spa and Outdoors Pages Completed
+[33m6d52f09[m Packages and Hero Updated
+[33m3ec88e0[m Spa and Outdoors Index Pages Updated
+[33mbe2728f[m Cinema CRUD Pages Added
+[33mef4bd03[m Restaurants CRUD Pages Added
+[33mbff2f9f[m Tables Modified
+[33m74e522e[m Hero Section Fixed
+[33m760f051[m Home Page Updated
+[33m521ffcc[m Resolved merge conflicts
+[33mf5c1e69[m Committing changes before merging .NET 8 branch
+[33m190b955[m[33m ([m[1;31morigin/MVCdotNetVersion_8[m[33m, [m[1;32mMVCdotNetVersion_8[m[33m)[m Migrated MVC Project from .NET 6 to .NET 8
+[33mda155b1[m Restaurant index Page Updated
+[33m1149fd3[m Outdoors Added
+[33mce6188e[m Employee Data Added
+[33m7e2559d[m Outdoors Controller Added
+[33m6a83660[m Retreat Controller Added
+[33m80cdfdb[m Welcome Page Updated
+[33m65e71da[m Restaurant Controller Added
+[33m838e45e[m Cinema Controller Added
+[33md42e08b[m Index Page Modified
+[33m0a004f5[m[33m ([m[1;31morigin/LayoutAdded[m[33m, [m[1;32mLayoutAdded[m[33m)[m HTML Added
+[33m27e078f[m[33m ([m[1;31morigin/Hotel_Context[m[33m, [m[1;32mHotel_Context[m[33m)[m DB Context Added
+[33m01899d1[m Initial Commit

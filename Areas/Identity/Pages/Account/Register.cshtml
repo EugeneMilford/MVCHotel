@@ -1,0 +1,226 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Style.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid register-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Register</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="../Views/Welcome/Index.cshtml">Welcome</a></li>
+                <li class="breadcrumb-item active text-primary">Register</li>
+            </ol>
+        </div>
+    </div>
+
+<!-- Register Start -->
+<div class="container-fluid py-5" style="background-color: #f1f1f1;">
+    <div class="container py-5">
+        <div class="row g-5 mb-5">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3">Hotel Registration</h5>
+                </div>
+                <h1 class="display-5 mb-4">Create Your Hotel Account</h1>
+                <p class="mb-5">Register to manage bookings, access your profile, and enjoy exclusive benefits.</p>
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                    <h2>Create a new account.</h2>
+                    <hr />
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                    <!-- Name -->
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.FirstName" class="form-control" aria-required="true" placeholder="Your Name" />
+                        <label asp-for="Input.FirstName">Name</label>
+                        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                    </div>
+
+                    <!-- Surname -->
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.LastName" class="form-control" aria-required="true" placeholder="Your Surname" />
+                        <label asp-for="Input.LastName">Surname</label>
+                        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                        <label asp-for="Input.Email">Email</label>
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <label asp-for="Input.Password">Password</label>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+                    <!-- Role Selection with Images -->
+                    <div class="mb-3">
+                        <label>Select your role:</label>
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="role-option">
+                                    <input type="radio" name="Input.UserRole" value="User" />
+                                    <img src="/img/Auth/user1.jpg" alt="User" class="role-img" />
+                                    <div>User</div>
+                                </label>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="role-option">
+                                    <input type="radio" name="Input.UserRole" value="Admin" />
+                                    <img src="/img/Auth/admin3.jpg" alt="Admin" class="role-img" />
+                                    <div>Admin</div>
+                                </label>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="role-option">
+                                    <input type="radio" name="Input.UserRole" value="Manager" />
+                                    <img src="/img/Auth/manager.jpg" alt="Manager" class="role-img" />
+                                    <div>Manager</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+                </form>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3">Other Registration Options</h5>
+                </div>
+                <h1 class="display-5 mb-4">Register with External Services</h1>
+                <p class="mb-3">You can also use your existing accounts from other services to register.</p>
+                <section>
+                    @if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                    {
+                        <div>
+                            <p>
+                                There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article</a> about setting up this ASP.NET application to support logging in via external services.
+                            </p>
+                        </div>
+                    }
+                    else
+                    {
+                        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                            <div>
+                                <p>
+                                    @foreach (var provider in Model.ExternalLogins!)
+                                    {
+                                        <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Register using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    }
+                                </p>
+                            </div>
+                        </form>
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center text-lg-start">
+        <div class="container">
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <p>Experience luxury and comfort at our hotel. Our dedicated staff ensures a memorable stay for you and your loved ones.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <h5 class="text-uppercase">Follow Us</h5>
+                        <a href="#" class="me-3 text-reset"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3 text-reset"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3 text-reset"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-reset"><i class="fab fa-youtube"></i></a>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 123 Hotel St, Cape Town<br>
+                        <i class="fas fa-phone"></i> +123 456 7890<br>
+                        <i class="fas fa-envelope"></i> info@hotel.com
+                    </p>
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <a href="#" class="me-3 text-reset"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-3 text-reset"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-3 text-reset"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-reset"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-3">
+            <p>&copy; 2024 Hotel Management. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="~/js/scripts.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>
+
+<style>
+    .role-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .role-option input {
+            display: none;
+        }
+
+    .role-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    .role-option input:checked + .role-img {
+        border: 7px solid blue;
+    }
+
+    .role-option div {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+</style>
+

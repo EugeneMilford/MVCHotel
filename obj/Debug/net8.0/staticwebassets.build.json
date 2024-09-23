@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iMUQ88Bk9TIyyonN+27drYTUuqvUBWrliRjmIEy7aQU=",
+  "Hash": "ZBvyrvmY0d+uc3W+WJU8DBfRjBZoNnmu5kWj6tpCInM=",
   "Source": "HotelManagement",
   "BasePath": "_content/HotelManagement",
   "Mode": "Default",
@@ -2320,8 +2320,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jpd7w12ksx",
-      "Integrity": "2doQECHyJ1jWC4pEOepZf4hGgW5twksJK8qkiV/HzK8=",
+      "Fingerprint": "yhqhwo3iqs",
+      "Integrity": "mi/4Tq+z8VyL6KMqpz+fS7iPAH+sZHr/uq4ij8tz28k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Style.css"
@@ -2346,6 +2346,111 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\admin3.jpg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/Auth/admin3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ua7hfvnv7s",
+      "Integrity": "NrpBPyoOLHBx+Bz7wjYVZcuhxlqeE6v28OVNZlAvjoA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Auth\\admin3.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\login.jpeg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/Auth/login#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yec403pf62",
+      "Integrity": "JqxwSb30CJS0pirh04FIDIiLfMd1Df9tq02Eb0YvcrI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Auth\\login.jpeg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\manager.jpg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/Auth/manager#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sp4znkn5nh",
+      "Integrity": "YAYYMIPkYQa6noO/+WIntvytyROE3t0yPywk96LgSxM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Auth\\manager.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\register.jpeg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/Auth/register#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ghh8mllk73",
+      "Integrity": "hKSlJz48Uq4g+DOIX8wsUEw8wuWnsv5jejsI36bEnB4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Auth\\register.jpeg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\user1.jpg",
+      "SourceId": "HotelManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\",
+      "BasePath": "_content/HotelManagement",
+      "RelativePath": "img/Auth/user1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wie2uvjy92",
+      "Integrity": "+N8P/71HFhbW9okXCQRm5a33TCvIRi/2160kgAIkYbI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Auth\\user1.jpg"
     },
     {
       "Identity": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\bg-img\\breadcumb.jpg",
@@ -9199,7 +9304,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39250"
+          "Value": "40300"
         },
         {
           "Name": "Content-Type",
@@ -9207,11 +9312,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2doQECHyJ1jWC4pEOepZf4hGgW5twksJK8qkiV/HzK8=\""
+          "Value": "\"mi/4Tq+z8VyL6KMqpz+fS7iPAH+sZHr/uq4ij8tz28k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Sep 2024 19:14:57 GMT"
+          "Value": "Wed, 18 Sep 2024 17:46:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9221,12 +9326,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2doQECHyJ1jWC4pEOepZf4hGgW5twksJK8qkiV/HzK8="
+          "Value": "sha256-mi/4Tq+z8VyL6KMqpz+fS7iPAH+sZHr/uq4ij8tz28k="
         }
       ]
     },
     {
-      "Route": "css/Style.jpd7w12ksx.css",
+      "Route": "css/Style.yhqhwo3iqs.css",
       "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\css\\Style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9236,7 +9341,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39250"
+          "Value": "40300"
         },
         {
           "Name": "Content-Type",
@@ -9244,11 +9349,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2doQECHyJ1jWC4pEOepZf4hGgW5twksJK8qkiV/HzK8=\""
+          "Value": "\"mi/4Tq+z8VyL6KMqpz+fS7iPAH+sZHr/uq4ij8tz28k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Sep 2024 19:14:57 GMT"
+          "Value": "Wed, 18 Sep 2024 17:46:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9258,7 +9363,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jpd7w12ksx"
+          "Value": "yhqhwo3iqs"
         },
         {
           "Name": "label",
@@ -9266,7 +9371,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2doQECHyJ1jWC4pEOepZf4hGgW5twksJK8qkiV/HzK8="
+          "Value": "sha256-mi/4Tq+z8VyL6KMqpz+fS7iPAH+sZHr/uq4ij8tz28k="
         }
       ]
     },
@@ -11733,6 +11838,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/admin3.jpg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\admin3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NrpBPyoOLHBx+Bz7wjYVZcuhxlqeE6v28OVNZlAvjoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 14:55:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NrpBPyoOLHBx+Bz7wjYVZcuhxlqeE6v28OVNZlAvjoA="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/admin3.ua7hfvnv7s.jpg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\admin3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NrpBPyoOLHBx+Bz7wjYVZcuhxlqeE6v28OVNZlAvjoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 14:55:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ua7hfvnv7s"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Auth/admin3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NrpBPyoOLHBx+Bz7wjYVZcuhxlqeE6v28OVNZlAvjoA="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/login.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\login.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "590317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqxwSb30CJS0pirh04FIDIiLfMd1Df9tq02Eb0YvcrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 17:44:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqxwSb30CJS0pirh04FIDIiLfMd1Df9tq02Eb0YvcrI="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/login.yec403pf62.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\login.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "590317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqxwSb30CJS0pirh04FIDIiLfMd1Df9tq02Eb0YvcrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 17:44:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yec403pf62"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Auth/login.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqxwSb30CJS0pirh04FIDIiLfMd1Df9tq02Eb0YvcrI="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/manager.jpg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\manager.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "262122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YAYYMIPkYQa6noO/+WIntvytyROE3t0yPywk96LgSxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 14:50:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YAYYMIPkYQa6noO/+WIntvytyROE3t0yPywk96LgSxM="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/manager.sp4znkn5nh.jpg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\manager.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "262122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YAYYMIPkYQa6noO/+WIntvytyROE3t0yPywk96LgSxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 14:50:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sp4znkn5nh"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Auth/manager.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YAYYMIPkYQa6noO/+WIntvytyROE3t0yPywk96LgSxM="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/register.ghh8mllk73.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\register.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "465633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hKSlJz48Uq4g+DOIX8wsUEw8wuWnsv5jejsI36bEnB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 17:45:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ghh8mllk73"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Auth/register.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hKSlJz48Uq4g+DOIX8wsUEw8wuWnsv5jejsI36bEnB4="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/register.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\register.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "465633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hKSlJz48Uq4g+DOIX8wsUEw8wuWnsv5jejsI36bEnB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 17:45:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hKSlJz48Uq4g+DOIX8wsUEw8wuWnsv5jejsI36bEnB4="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/user1.jpg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\user1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "208411"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+N8P/71HFhbW9okXCQRm5a33TCvIRi/2160kgAIkYbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 14:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+N8P/71HFhbW9okXCQRm5a33TCvIRi/2160kgAIkYbI="
+        }
+      ]
+    },
+    {
+      "Route": "img/Auth/user1.wie2uvjy92.jpg",
+      "AssetFile": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\user1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "208411"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+N8P/71HFhbW9okXCQRm5a33TCvIRi/2160kgAIkYbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Sep 2024 14:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wie2uvjy92"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Auth/user1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+N8P/71HFhbW9okXCQRm5a33TCvIRi/2160kgAIkYbI="
         }
       ]
     },

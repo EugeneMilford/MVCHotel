@@ -201,6 +201,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\admin3.jpg",
+      "PackagePath": "staticwebassets\\img\\Auth\\admin3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\login.jpeg",
+      "PackagePath": "staticwebassets\\img\\Auth\\login.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\manager.jpg",
+      "PackagePath": "staticwebassets\\img\\Auth\\manager.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\register.jpeg",
+      "PackagePath": "staticwebassets\\img\\Auth\\register.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Auth\\user1.jpg",
+      "PackagePath": "staticwebassets\\img\\Auth\\user1.jpg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET MVC\\HotelManagement\\wwwroot\\img\\Outdoors\\activity01.jpeg",
       "PackagePath": "staticwebassets\\img\\Outdoors\\activity01.jpeg"
     },
