@@ -9,23 +9,18 @@ namespace HotelManagement.Data
 {
     public class HotelContext : DbContext
     {
-        public HotelContext (DbContextOptions<HotelContext> options)
+        public HotelContext(DbContextOptions<HotelContext> options)
             : base(options)
         {
         }
+
         public DbSet<Hotel> Hotel { get; set; }
-
         public DbSet<Employee> Staff { get; set; }
-
-        public DbSet<Activities> Activities { get; set; } 
-
+        public DbSet<Activities> Activities { get; set; }
         public DbSet<Cinema> Cinema { get; set; }
-
         public DbSet<Restaurant> Restaurant { get; set; }
-
         public DbSet<PlayArea> Kids { get; set; }
         public DbSet<Spa> Spabooking { get; set; }
-
         public DbSet<Contact> ContactMessages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

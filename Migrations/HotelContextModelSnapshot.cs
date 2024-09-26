@@ -131,7 +131,36 @@ namespace HotelManagement.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("Employee", (string)null);
+                    b.ToTable("Employees", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            EmployeeId = 1,
+                            Address = "Cape Town",
+                            Age = 35,
+                            Name = "John",
+                            Surname = "Doe",
+                            Title = "Concierge"
+                        },
+                        new
+                        {
+                            EmployeeId = 2,
+                            Address = "Cape Town",
+                            Age = 39,
+                            Name = "Sarah",
+                            Surname = "Williams",
+                            Title = "Manager"
+                        },
+                        new
+                        {
+                            EmployeeId = 3,
+                            Address = "Cape Town",
+                            Age = 34,
+                            Name = "Michael",
+                            Surname = "Johnson",
+                            Title = "Chef"
+                        });
                 });
 
             modelBuilder.Entity("HotelManagement.Models.Hotel", b =>
