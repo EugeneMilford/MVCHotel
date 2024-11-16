@@ -26,6 +26,36 @@ namespace HotelManagement.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>().ToTable("Employees");
+
+            modelBuilder.Entity<Activities>()
+        .HasOne(a => a.User)
+        .WithMany() // Optional - if you want to have navigation properties for HotelUser to Activities
+        .HasForeignKey(a => a.UserId);
+
+            modelBuilder.Entity<Cinema>()
+                .HasOne(c => c.User)
+                .WithMany()
+                .HasForeignKey(c => c.UserId);
+
+            modelBuilder.Entity<Restaurant>()
+                .HasOne(r => r.User)
+                .WithMany()
+                .HasForeignKey(r => r.UserId);
+
+            modelBuilder.Entity<PlayArea>()
+                .HasOne(p => p.User)
+                .WithMany()
+                .HasForeignKey(p => p.UserId);
+
+            modelBuilder.Entity<Spa>()
+                .HasOne(s => s.User)
+                .WithMany()
+                .HasForeignKey(s => s.UserId);
+
+            modelBuilder.Entity<Contact>()
+                .HasOne(c => c.User)
+                .WithMany()
+                .HasForeignKey(c => c.UserId);
         }
     }
 }

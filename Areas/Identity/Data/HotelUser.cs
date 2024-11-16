@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HotelManagement.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace HotelManagement.Areas.Identity.Data;
@@ -12,5 +13,6 @@ public class HotelUser : IdentityUser
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string UserRole { get; set; }
+
 }
 

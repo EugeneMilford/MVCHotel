@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using HotelManagement.Areas.Identity.Data;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HotelManagement.Models
 {
@@ -14,5 +16,7 @@ namespace HotelManagement.Models
         [Display(Name = "Number of Tickets")]
         public int NumberOfTickets { get; set; }
         public bool Confirmed { get; set; }
+        public string UserId { get; set; }
+        public HotelUser User { get; set; } // Link to HotelUser
     }
 }

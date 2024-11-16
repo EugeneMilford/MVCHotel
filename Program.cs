@@ -17,8 +17,26 @@ builder.Services.AddDbContext<HotelIdentityContext>(options =>
         ?? throw new InvalidOperationException("Connection string 'HotelIdentityContext' not found.")));
 
 // Add Identity services with the default settings
-builder.Services.AddDefaultIdentity<HotelUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<HotelIdentityContext>();
+builder.Services.AddIdentity<HotelUser, IdentityRole>(options =>
+{
+    options.Password.RequiredLength = 6;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireUppercase = true;
+})
+.AddEntityFrameworkStores<HotelIdentityContext>() // Use HotelIdentityContext for Identity storage
+.AddDefaultTokenProviders();
+
+// Configure Role Manager
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireAdministratorRole", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("RequireUserRole", policy => policy.RequireRole("User"));
+});
+
+// Add DataSeeder as a service
+builder.Services.AddScoped<RoleSeeder>();
 
 // Add services to the container
 builder.Services.AddControllersWithViews();
@@ -26,11 +44,22 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+// Run migrations for both HotelContext and HotelIdentityContext
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
 
-    SeedData.Initialize(services);
+    // Run migrations for HotelContext
+    var hotelContext = services.GetRequiredService<HotelContext>();
+    hotelContext.Database.Migrate();
+
+    // Run migrations for HotelIdentityContext
+    var identityContext = services.GetRequiredService<HotelIdentityContext>();
+    identityContext.Database.Migrate();
+
+    // Initialize role and user data
+    var roleSeeder = services.GetRequiredService<RoleSeeder>();
+    await roleSeeder.SeedAsync(); // Seed roles and users
 }
 
 // Configure the HTTP request pipeline
@@ -39,8 +68,6 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
-
-// Removed SeedData code
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

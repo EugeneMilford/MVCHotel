@@ -1,67 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HotelManagement.Data;
 using HotelManagement.Models;
 
 namespace HotelManagement.Controllers
 {
-    //public class ContactsController : Controller
-    //{
-    //    private readonly HotelContext _context;
-
-    //    public ContactsController(HotelContext context) 
-    //    {
-    //        _context = context;
-    //    }
-
-    //    // GET: Contact
-    //    public async Task<IActionResult> Index()
-    //    {
-    //        return View(await _context.Cinema.ToListAsync());
-    //    }
-    //}
-
-    namespace HotelManagement.Controllers
+    [Authorize] // Ensure all actions require authentication
+    public class ContactController : Controller
     {
-        public class ContactController : Controller
+        private readonly HotelContext _context;
+
+        public ContactController(HotelContext context)
         {
-            private readonly HotelContext _context;
+            _context = context;
+        }
 
-            public ContactController(HotelContext context)
-            {
-                _context = context;
-            }
+        // GET: Contact
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-            [HttpGet]
-            public IActionResult Index()
+        // POST: Contact
+        [HttpPost]
+        public async Task<IActionResult> Index(Contact contactMessage)
+        {
+            if (ModelState.IsValid)
             {
-                return View();
+                // Optionally, associate the contact message with the user
+                contactMessage.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Associate message with the current user
+                _context.ContactMessages.Add(contactMessage);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Success"); // Redirect to a success page
             }
+            return View(contactMessage);
+        }
 
-            [HttpPost]
-            public async Task<IActionResult> Index(Contact contactMessage)
-            {
-                if (ModelState.IsValid)
-                {
-                    _context.ContactMessages.Add(contactMessage);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction("Success"); // Redirect to a success page
-                }
-                return View(contactMessage);
-            }
-
-            public IActionResult Success()
-            {
-                return View();
-            }
+        // GET: Success
+        public IActionResult Success()
+        {
+            return View();
         }
     }
-
 }
 
 

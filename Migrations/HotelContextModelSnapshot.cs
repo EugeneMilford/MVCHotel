@@ -22,6 +22,67 @@ namespace HotelManagement.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("HotelManagement.Areas.Identity.Data.HotelUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserRole")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HotelUser");
+                });
+
             modelBuilder.Entity("HotelManagement.Models.Activities", b =>
                 {
                     b.Property<int>("ActivityID")
@@ -45,7 +106,12 @@ namespace HotelManagement.Migrations
                     b.Property<int>("NumberofPeople")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("ActivityID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Activities");
                 });
@@ -73,7 +139,12 @@ namespace HotelManagement.Migrations
                     b.Property<int>("NumberOfTickets")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("CinemaID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Cinema");
                 });
@@ -101,7 +172,12 @@ namespace HotelManagement.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("ContactId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("ContactMessages");
                 });
@@ -132,35 +208,6 @@ namespace HotelManagement.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employees", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            EmployeeId = 1,
-                            Address = "Cape Town",
-                            Age = 35,
-                            Name = "John",
-                            Surname = "Doe",
-                            Title = "Concierge"
-                        },
-                        new
-                        {
-                            EmployeeId = 2,
-                            Address = "Cape Town",
-                            Age = 39,
-                            Name = "Sarah",
-                            Surname = "Williams",
-                            Title = "Manager"
-                        },
-                        new
-                        {
-                            EmployeeId = 3,
-                            Address = "Cape Town",
-                            Age = 34,
-                            Name = "Michael",
-                            Surname = "Johnson",
-                            Title = "Chef"
-                        });
                 });
 
             modelBuilder.Entity("HotelManagement.Models.Hotel", b =>
@@ -214,7 +261,12 @@ namespace HotelManagement.Migrations
                     b.Property<int>("NumberOfChildren")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("PlayAreaID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Kids");
                 });
@@ -239,7 +291,12 @@ namespace HotelManagement.Migrations
                     b.Property<int>("NumberOfGuests")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("RestaurantID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Restaurant");
                 });
@@ -273,9 +330,68 @@ namespace HotelManagement.Migrations
                     b.Property<DateTime>("StartTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("SpaId");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Spabooking");
+                });
+
+            modelBuilder.Entity("HotelManagement.Models.Activities", b =>
+                {
+                    b.HasOne("HotelManagement.Areas.Identity.Data.HotelUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("HotelManagement.Models.Cinema", b =>
+                {
+                    b.HasOne("HotelManagement.Areas.Identity.Data.HotelUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("HotelManagement.Models.Contact", b =>
+                {
+                    b.HasOne("HotelManagement.Areas.Identity.Data.HotelUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("HotelManagement.Models.PlayArea", b =>
+                {
+                    b.HasOne("HotelManagement.Areas.Identity.Data.HotelUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("HotelManagement.Models.Restaurant", b =>
+                {
+                    b.HasOne("HotelManagement.Areas.Identity.Data.HotelUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("HotelManagement.Models.Spa", b =>
+                {
+                    b.HasOne("HotelManagement.Areas.Identity.Data.HotelUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

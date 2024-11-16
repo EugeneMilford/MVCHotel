@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HotelManagement.Data;
 using HotelManagement.Models;
 
 namespace HotelManagement.Controllers
 {
+    [Authorize] // Ensure all actions require authentication
     public class RestaurantsController : Controller
     {
         private readonly HotelContext _context;
@@ -19,13 +20,21 @@ namespace HotelManagement.Controllers
             _context = context;
         }
 
-        // GET: Restaurant
+        // GET: Restaurants
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Restaurant.ToListAsync());
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (User.IsInRole("Admin"))
+            {
+                return View(await _context.Restaurant.ToListAsync()); // Admin can see all bookings
+            }
+            else
+            {
+                return View(await _context.Restaurant.Where(r => r.UserId == userId).ToListAsync()); // Users can see only their bookings
+            }
         }
 
-        // GET: Restaurant/Details/5
+        // GET: Restaurants/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Restaurant == null)
@@ -40,24 +49,29 @@ namespace HotelManagement.Controllers
                 return NotFound();
             }
 
+            // Check if the user is authorized to view this booking
+            if (User.IsInRole("User") && restaurant.UserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return Forbid(); // User trying to access another user's booking
+            }
+
             return View(restaurant);
         }
 
-        // GET: Restaurant/Create
+        // GET: Restaurants/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Restaurant/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Restaurants/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("RestaurantID,CustomerName,BookingTime,NumberOfGuests,Confirmed")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
             {
+                restaurant.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Associate booking with the current user
                 _context.Add(restaurant);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -65,7 +79,7 @@ namespace HotelManagement.Controllers
             return View(restaurant);
         }
 
-        // GET: Restaurant/Edit/5
+        // GET: Restaurants/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Restaurant == null)
@@ -78,12 +92,17 @@ namespace HotelManagement.Controllers
             {
                 return NotFound();
             }
+
+            // Check if the user is authorized to edit this booking
+            if (User.IsInRole("User") && restaurant.UserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return Forbid(); // User trying to edit another user's booking
+            }
+
             return View(restaurant);
         }
 
-        // POST: Restaurant/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Restaurants/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("RestaurantID,CustomerName,BookingTime,NumberOfGuests,Confirmed")] Restaurant restaurant)
@@ -116,7 +135,7 @@ namespace HotelManagement.Controllers
             return View(restaurant);
         }
 
-        // GET: Restaurant/Delete/5
+        // GET: Restaurants/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Restaurant == null)
@@ -131,10 +150,16 @@ namespace HotelManagement.Controllers
                 return NotFound();
             }
 
+            // Check if the user is authorized to delete this booking
+            if (User.IsInRole("User") && restaurant.UserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return Forbid(); // User trying to delete another user's booking
+            }
+
             return View(restaurant);
         }
 
-        // POST: Restaurant/Delete/5
+        // POST: Restaurants/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -160,3 +185,4 @@ namespace HotelManagement.Controllers
         }
     }
 }
+
